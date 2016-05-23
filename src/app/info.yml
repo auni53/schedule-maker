@@ -1,0 +1,216 @@
+events:
+  Sunday:
+    - name:        Residence Move-In
+      color:       blue
+      start:       9
+      end:         16
+
+    - name:        Residence Orientation
+      color:       red
+      start:       16
+      end:         20
+
+  Monday:
+    - name:        Commuter Registration
+      color:       blue
+      start:       9.5
+      end:         10.5
+
+    - name:        Meet Your Dons
+      color:       orange
+      start:       10.5
+      end:         12
+
+    - name:        Grand Meet & Greet
+      color:       green
+      start:       12
+      end:         14
+
+    - name:        Opening Ceremonies
+      color:       red
+      start:       14
+      end:         15.5
+
+    - name:        Frosh dance
+      color:       green
+      start:       15.5
+      end:         16.5
+
+    - name:        Scavenger Hunt
+      color:       yellow
+      start:       16.5
+      end:         17.5
+
+    - name:        Dinner with the Dean
+      color:       purple 
+      start:       18
+      end:         19.5
+
+    - name:        Dissolve
+      color:       blue
+      start:       19.5
+      end:         21
+
+  Tuesday:
+    - name:        Commuter Registration
+      color:       blue
+      start:       9.5
+      end:         10.5
+
+    - name:        Meet Your Dons
+      color:       orange
+      start:       10.5
+      end:         12
+
+    - name:        Grand Meet & Greet
+      color:       green
+      start:       12
+      end:         14
+
+    - name:        Opening Ceremonies
+      color:       red
+      start:       14
+      end:         15.5
+
+    - name:        Frosh dance
+      color:       green
+      start:       15.5
+      end:         16.5
+
+    - name:        Scavenger Hunt
+      color:       yellow
+      start:       16.5
+      end:         17.5
+
+    - name:        Dinner with the Dean
+      color:       purple 
+      start:       18
+      end:         19.5
+
+    - name:        Dissolve
+      color:       blue
+      start:       19.5
+      end:         21
+
+  Wednesday:
+    - name:        Commuter Registration
+      color:       blue
+      start:       9.5
+      end:         10.5
+
+    - name:        Meet Your Dons
+      color:       orange
+      start:       10.5
+      end:         12
+
+    - name:        Grand Meet & Greet
+      color:       green
+      start:       12
+      end:         14
+
+    - name:        Opening Ceremonies
+      color:       red
+      start:       14
+      end:         15.5
+
+    - name:        Frosh dance
+      color:       green
+      start:       15.5
+      end:         16.5
+
+    - name:        Scavenger Hunt
+      color:       yellow
+      start:       16.5
+      end:         17.5
+
+    - name:        Dinner with the Dean
+      color:       purple 
+      start:       18
+      end:         19.5
+
+    - name:        Dissolve
+      color:       blue
+      start:       19.5
+      end:         21
+
+  Thursday:
+    - name:        Commuter Registration
+      color:       blue
+      start:       9.5
+      end:         10.5
+
+    - name:        Meet Your Dons
+      color:       orange
+      start:       10.5
+      end:         12
+
+    - name:        Grand Meet & Greet
+      color:       green
+      start:       12
+      end:         14
+
+    - name:        Opening Ceremonies
+      color:       red
+      start:       14
+      end:         15.5
+
+    - name:        Frosh dance
+      color:       green
+      start:       15.5
+      end:         16.5
+
+    - name:        Scavenger Hunt
+      color:       yellow
+      start:       16.5
+      end:         17.5
+
+    - name:        Dinner with the Dean
+      color:       purple 
+      start:       18
+      end:         19.5
+
+    - name:        Dissolve
+      color:       blue
+      start:       19.5
+      end:         21
+
+  Friday:
+    - name:        Commuter Registration
+      color:       blue
+      start:       9.5
+      end:         10.5
+
+    - name:        Meet Your Dons
+      color:       orange
+      start:       10.5
+      end:         12
+
+    - name:        Grand Meet & Greet
+      color:       green
+      start:       12
+      end:         14
+
+    - name:        Opening Ceremonies
+      color:       red
+      start:       14
+      end:         15.5
+
+    - name:        Frosh dance
+      color:       green
+      start:       15.5
+      end:         16.5
+
+    - name:        Scavenger Hunt
+      color:       yellow
+      start:       16.5
+      end:         17.5
+
+    - name:        Dinner with the Dean
+      color:       purple 
+      start:       18
+      end:         19.5
+
+    - name:        Dissolve
+      color:       blue
+      start:       19.5
+      end:         21
