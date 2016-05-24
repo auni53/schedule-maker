@@ -20887,11 +20887,7 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 38);
 	
-	var _info = __webpack_require__(/*! json!yaml!./info.yml */ 169);
-	
-	var _info2 = _interopRequireDefault(_info);
-	
-	var _row = __webpack_require__(/*! ./row.jsx */ 170);
+	var _row = __webpack_require__(/*! ./row.jsx */ 169);
 	
 	var _row2 = _interopRequireDefault(_row);
 	
@@ -20981,282 +20977,6 @@
 
 /***/ },
 /* 169 */
-/*!**********************************************************!*\
-  !*** ./~/json-loader!./~/yaml-loader!./src/app/info.yml ***!
-  \**********************************************************/
-/***/ function(module, exports) {
-
-	module.exports = {
-		"events": {
-			"Sunday": [
-				{
-					"name": "Residence Move-In",
-					"color": "blue",
-					"start": 9,
-					"end": 16
-				},
-				{
-					"name": "Residence Orientation",
-					"color": "red",
-					"start": 16,
-					"end": 20
-				}
-			],
-			"Monday": [
-				{
-					"name": "Commuter Registration",
-					"color": "blue",
-					"start": 9.5,
-					"end": 10.5
-				},
-				{
-					"name": "Meet Your Dons",
-					"color": "orange",
-					"start": 10.5,
-					"end": 12
-				},
-				{
-					"name": "Grand Meet & Greet",
-					"color": "green",
-					"start": 12,
-					"end": 14
-				},
-				{
-					"name": "Opening Ceremonies",
-					"color": "red",
-					"start": 14,
-					"end": 15.5
-				},
-				{
-					"name": "Frosh dance",
-					"color": "green",
-					"start": 15.5,
-					"end": 16.5
-				},
-				{
-					"name": "Scavenger Hunt",
-					"color": "yellow",
-					"start": 16.5,
-					"end": 17.5
-				},
-				{
-					"name": "Dinner with the Dean",
-					"color": "purple",
-					"start": 18,
-					"end": 19.5
-				},
-				{
-					"name": "Dissolve",
-					"color": "blue",
-					"start": 19.5,
-					"end": 21
-				}
-			],
-			"Tuesday": [
-				{
-					"name": "Commuter Registration",
-					"color": "blue",
-					"start": 9.5,
-					"end": 10.5
-				},
-				{
-					"name": "Meet Your Dons",
-					"color": "orange",
-					"start": 10.5,
-					"end": 12
-				},
-				{
-					"name": "Grand Meet & Greet",
-					"color": "green",
-					"start": 12,
-					"end": 14
-				},
-				{
-					"name": "Opening Ceremonies",
-					"color": "red",
-					"start": 14,
-					"end": 15.5
-				},
-				{
-					"name": "Frosh dance",
-					"color": "green",
-					"start": 15.5,
-					"end": 16.5
-				},
-				{
-					"name": "Scavenger Hunt",
-					"color": "yellow",
-					"start": 16.5,
-					"end": 17.5
-				},
-				{
-					"name": "Dinner with the Dean",
-					"color": "purple",
-					"start": 18,
-					"end": 19.5
-				},
-				{
-					"name": "Dissolve",
-					"color": "blue",
-					"start": 19.5,
-					"end": 21
-				}
-			],
-			"Wednesday": [
-				{
-					"name": "Commuter Registration",
-					"color": "blue",
-					"start": 9.5,
-					"end": 10.5
-				},
-				{
-					"name": "Meet Your Dons",
-					"color": "orange",
-					"start": 10.5,
-					"end": 12
-				},
-				{
-					"name": "Grand Meet & Greet",
-					"color": "green",
-					"start": 12,
-					"end": 14
-				},
-				{
-					"name": "Opening Ceremonies",
-					"color": "red",
-					"start": 14,
-					"end": 15.5
-				},
-				{
-					"name": "Frosh dance",
-					"color": "green",
-					"start": 15.5,
-					"end": 16.5
-				},
-				{
-					"name": "Scavenger Hunt",
-					"color": "yellow",
-					"start": 16.5,
-					"end": 17.5
-				},
-				{
-					"name": "Dinner with the Dean",
-					"color": "purple",
-					"start": 18,
-					"end": 19.5
-				},
-				{
-					"name": "Dissolve",
-					"color": "blue",
-					"start": 19.5,
-					"end": 21
-				}
-			],
-			"Thursday": [
-				{
-					"name": "Commuter Registration",
-					"color": "blue",
-					"start": 9.5,
-					"end": 10.5
-				},
-				{
-					"name": "Meet Your Dons",
-					"color": "orange",
-					"start": 10.5,
-					"end": 12
-				},
-				{
-					"name": "Grand Meet & Greet",
-					"color": "green",
-					"start": 12,
-					"end": 14
-				},
-				{
-					"name": "Opening Ceremonies",
-					"color": "red",
-					"start": 14,
-					"end": 15.5
-				},
-				{
-					"name": "Frosh dance",
-					"color": "green",
-					"start": 15.5,
-					"end": 16.5
-				},
-				{
-					"name": "Scavenger Hunt",
-					"color": "yellow",
-					"start": 16.5,
-					"end": 17.5
-				},
-				{
-					"name": "Dinner with the Dean",
-					"color": "purple",
-					"start": 18,
-					"end": 19.5
-				},
-				{
-					"name": "Dissolve",
-					"color": "blue",
-					"start": 19.5,
-					"end": 21
-				}
-			],
-			"Friday": [
-				{
-					"name": "Commuter Registration",
-					"color": "blue",
-					"start": 9.5,
-					"end": 10.5
-				},
-				{
-					"name": "Meet Your Dons",
-					"color": "orange",
-					"start": 10.5,
-					"end": 12
-				},
-				{
-					"name": "Grand Meet & Greet",
-					"color": "green",
-					"start": 12,
-					"end": 14
-				},
-				{
-					"name": "Opening Ceremonies",
-					"color": "red",
-					"start": 14,
-					"end": 15.5
-				},
-				{
-					"name": "Frosh dance",
-					"color": "green",
-					"start": 15.5,
-					"end": 16.5
-				},
-				{
-					"name": "Scavenger Hunt",
-					"color": "yellow",
-					"start": 16.5,
-					"end": 17.5
-				},
-				{
-					"name": "Dinner with the Dean",
-					"color": "purple",
-					"start": 18,
-					"end": 19.5
-				},
-				{
-					"name": "Dissolve",
-					"color": "blue",
-					"start": 19.5,
-					"end": 21
-				}
-			]
-		}
-	};
-
-/***/ },
-/* 170 */
 /*!*************************!*\
   !*** ./src/app/row.jsx ***!
   \*************************/
@@ -21274,46 +20994,162 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 38);
 	
-	var _info = __webpack_require__(/*! json!yaml!./info.yml */ 169);
+	var _config = __webpack_require__(/*! json!yaml!../config.yml */ 170);
 	
-	var _info2 = _interopRequireDefault(_info);
+	var _config2 = _interopRequireDefault(_config);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function eventsAtTime(day, time) {
+	  return Object.keys(_config2.default.events[day]).filter(function (t) {
+	    return t <= time && time < _config2.default.events[day][t].end;
+	  });
+	}
 	
 	function Row(_ref) {
 	  var time = _ref.time;
 	
 	
+	  var eventInfo = _config2.default.events;
 	  var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+	
+	  var timestamp = time % 1 === 0 && _react2.default.createElement(
+	    'td',
+	    { className: 'time', rowSpan: '2' },
+	    time <= 12 ? time : time - 12
+	  );
+	
 	  var events = days.map(function (day) {
-	    return _info2.default.events["Sunday"].map(function (event) {
-	      return event.start === time && _react2.default.createElement(
-	        'td',
-	        { rowspan: (event.end - event.start) * 2 },
-	        _react2.default.createElement('a', { 'class': 'event', style: { background: 'blue' } })
-	      );
-	    });
+	    return time in eventInfo[day] ? _react2.default.createElement(
+	      'td',
+	      { rowSpan: (eventInfo[day][time].end - time) * 2 },
+	      _react2.default.createElement(
+	        'a',
+	        { className: 'event', style: { background: eventInfo[day][time].color } },
+	        eventInfo[day][time].name
+	      )
+	    ) : eventsAtTime(day, time).length === 0 && _react2.default.createElement('td', null);
 	  });
 	
-	  console.log(events);
 	  return _react2.default.createElement(
 	    'tr',
 	    null,
-	    _react2.default.createElement(
-	      'td',
-	      { className: 'time', rowspan: '2' },
-	      time % 1 == 0 && time % 13
-	    ),
+	    timestamp,
 	    events,
-	    _react2.default.createElement(
-	      'td',
-	      { className: 'time', rowspan: '2' },
-	      time % 1 == 0 && time % 13
-	    )
+	    timestamp
 	  );
 	}
 	
 	exports.default = Row;
+
+/***/ },
+/* 170 */
+/*!********************************************************!*\
+  !*** ./~/json-loader!./~/yaml-loader!./src/config.yml ***!
+  \********************************************************/
+/***/ function(module, exports) {
+
+	module.exports = {
+		"schedule": {
+			"logo": "assets/title.png",
+			"start": 9,
+			"end": 24
+		},
+		"events": {
+			"Sunday": {
+				"9": {
+					"name": "Residence Move-In",
+					"color": "blue",
+					"end": 11
+				},
+				"12": {
+					"name": "Seminar",
+					"color": "green",
+					"end": 16
+				},
+				"16": {
+					"name": "Residence Orientation",
+					"color": "red",
+					"end": 20
+				}
+			},
+			"Monday": {
+				"9": {
+					"name": "Commuter Registration",
+					"color": "blue",
+					"end": 10.5
+				},
+				"12": {
+					"name": "Grand Meet & Greet",
+					"color": "green",
+					"end": 14
+				},
+				"14": {
+					"name": "Opening Ceremonies",
+					"color": "red",
+					"end": 15.5
+				},
+				"18": {
+					"name": "Dinner with the Dean",
+					"color": "purple",
+					"end": 19.5
+				},
+				"21": {
+					"name": "Bright Lights",
+					"color": "black",
+					"end": 24
+				},
+				"10.5": {
+					"name": "Meet Your Dons",
+					"color": "orange",
+					"end": 12
+				},
+				"15.5": {
+					"name": "Frosh dance",
+					"color": "green",
+					"end": 16.5
+				},
+				"16.5": {
+					"name": "Scavenger Hunt",
+					"color": "yellow",
+					"end": 17.5
+				},
+				"19.5": {
+					"name": "Dissolve",
+					"color": "blue",
+					"end": 21
+				}
+			},
+			"Tuesday": {
+				"9": {
+					"name": "empty",
+					"color": "black",
+					"end": 24
+				}
+			},
+			"Wednesday": {
+				"9": {
+					"name": "empty",
+					"color": "black",
+					"end": 24
+				}
+			},
+			"Thursday": {
+				"9": {
+					"name": "empty",
+					"color": "black",
+					"end": 24
+				}
+			},
+			"Friday": {
+				"9": {
+					"name": "empty",
+					"color": "black",
+					"end": 24
+				}
+			}
+		}
+	};
 
 /***/ }
 /******/ ]);

@@ -81,6 +81,7 @@ td      { border: none;
           height: inherit; 
           text-align: center;  }
 
+
 /* Firefox-specific bug with flex box expansion */
 @-moz-document url-prefix() {
     td  { height: 100%; padding: 2px; }

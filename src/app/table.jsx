@@ -1,6 +1,5 @@
 import React from 'react';
 import { render } from 'react-dom';
-import info from 'json!yaml!./info.yml';
 import Row from './row.jsx';
 
 function Table() {

@@ -1,33 +1,39 @@
 import React from 'react';
 import { render } from 'react-dom';
-import info from 'json!yaml!./info.yml';
+import config from 'json!yaml!../config.yml';
+
+function eventsAtTime(day, time) {
+  return Object.keys(config.events[day]).filter( t => 
+    (t <= time && time < config.events[day][t].end)
+  );
+}
 
 function Row({ time }) {
-  
-  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
-  const events = days.map( (day) => (
-    info.events["Sunday"].map( (event) => event.start === time &&
-    (
-    <td rowspan={(event.end - event.start) * 2}>
-      <a class="event" style={{ background: 'blue' }} >
-        
-      </a>
-    </td>
-    ))
-  ));
 
-  console.log(events);
+  const eventInfo = config.events;
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+
+  const timestamp = (time %1 === 0) && (
+    <td className="time" rowSpan="2">
+      { time <= 12 ? time : time - 12 }
+    </td>
+  );
+
+  const events = days.map( day =>
+    time in eventInfo[day]
+    ? <td rowSpan={(eventInfo[day][time].end - time) * 2}>
+        <a className="event" style={{ background: eventInfo[day][time].color }} >
+          {eventInfo[day][time].name}
+        </a>
+      </td>
+    : eventsAtTime(day, time).length === 0 && <td/>
+  );
+
   return (
     <tr>
-      <td className="time" rowspan="2">
-        { time % 1 == 0 && time % 13 }
-      </td>
-
-      { events }   
-
-      <td className="time" rowspan="2">
-        { time % 1 == 0 && time % 13 }
-      </td>
+      {timestamp}
+      {events}
+      {timestamp}
     </tr>
   );
 }
