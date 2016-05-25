@@ -1,6 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
 import config from 'json!yaml!../config.yml';
+import Event from './Event.jsx';
+import Description from './Description.jsx';
+import { PanelGroup } from 'react-bootstrap';
 
 function eventsAtTime(day, time) {
   return Object.keys(config.events[day]).filter( t => 
@@ -22,9 +25,8 @@ function Row({ time }) {
   const events = days.map( day =>
     time in eventInfo[day]
     ? <td rowSpan={(eventInfo[day][time].end - time) * 2}>
-        <a className="event" style={{ background: eventInfo[day][time].color }} >
-          {eventInfo[day][time].name}
-        </a>
+        <Event event={eventInfo[day][time]} />
+        <Description event={eventInfo[day][time]} />
       </td>
     : eventsAtTime(day, time).length === 0 && <td/>
   );
@@ -32,6 +34,7 @@ function Row({ time }) {
   return (
     <tr>
       {timestamp}
+      
       {events}
       {timestamp}
     </tr>

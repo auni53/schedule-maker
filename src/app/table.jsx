@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Row from './row.jsx';
+import Row from './Row.jsx';
 
 function Table() {
 
