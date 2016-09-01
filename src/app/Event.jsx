@@ -1,11 +1,27 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { PanelGroup, Panel } from 'react-bootstrap';
 
-function Event({ event }) {
+function Event(props) {
+  const { event, color, active } = props;
+
+  const style = {
+    color: 'white',
+    fontWeight: 500,
+
+    background: color,
+    padding: '5px 0px',
+
+    height: '100%',
+    width: '100%',
+    borderRadius: '5px',
+
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  };
 
   return (
-    <div className="event" style={{ background: event.color }} >
+    <div style={style} >
       {event.name}
     </div>
   );

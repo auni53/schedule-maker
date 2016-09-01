@@ -1,21 +1,3 @@
-/*
-    Blue:    #3F51B5
-    Red:     #DB2727
-    Orange:  #EF6C00
-    Green:   #4CAF50
-    Gold:    #DCA828
-    Purple:  #9C27B0
-    Teal:    #009688
-    LBlue:   #2196F3
-    ROrange: #F44336
-    Pinky:   #E91E63
-    BGreen:  #024640
-    GGold:   #827717
-    BPurple: #32004B
-    CGrey:   #607D8B
-    DGreen:  #024640
-*/
-
 .table-container {
   margin-left:auto;
   margin-right:auto;
@@ -58,6 +40,7 @@ h3 {
 
 #main {
   width:1040px;
+  width: 95%;
 }
 
 tr {
@@ -67,11 +50,13 @@ tr {
 td {
   border:none;
   border-left:5px solid transparent;
+  height:inherit;
+/*
   padding:1px;
   margin:0;
   vertical-align:middle;
-  height:inherit;
   text-align:center;
+*/
 }
 
 .time {
@@ -117,7 +102,7 @@ td {
 
 /* Hover animation */
 .event:hover {
-  transform:scale(1.02);
+  transform:scale(1.002);
 }
 
 @media max-width 699px{

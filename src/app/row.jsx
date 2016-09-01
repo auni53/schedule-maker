@@ -2,43 +2,47 @@ import React from 'react';
 import { render } from 'react-dom';
 import config from 'json!yaml!../config.yml';
 import Event from './Event.jsx';
-import Description from './Description.jsx';
-import { PanelGroup } from 'react-bootstrap';
 
-function eventsAtTime(day, time) {
-  return Object.keys(config.events[day]).filter( t => 
-    (t <= time && time < config.events[day][t].end)
-  );
-}
+export default class Row extends React.Component {
 
-function Row({ time }) {
+  eventsAtTime(day, time) {
+    return Object.keys(config.events[day]).filter( t => 
+      (t <= time && time < config.events[day][t].end)
+    );
+  }
 
-  const eventInfo = config.events;
-  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+  render() {
+    const { time, active } = this.props;
 
-  const timestamp = (time %1 === 0) && (
-    <td className="time" rowSpan="2">
-      { time <= 12 ? time : time - 12 }
-    </td>
-  );
+    const eventInfo = config.events;
+    const colorInfo = config.colors;    
 
-  const events = days.map( day =>
-    time in eventInfo[day]
-    ? <td rowSpan={(eventInfo[day][time].end - time) * 2}>
-        <Event event={eventInfo[day][time]} />
-        <Description event={eventInfo[day][time]} />
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+
+    const timestamp = (time %1 === 0) && (
+      <td className="time" rowSpan="2">
+        { time <= 12 ? time : time - 12 }
       </td>
-    : eventsAtTime(day, time).length === 0 && <td/>
-  );
+    );
 
-  return (
-    <tr>
-      {timestamp}
-      
-      {events}
-      {timestamp}
-    </tr>
-  );
+    const events = days.map( day => {
+      const event = eventInfo[day][time];
+      const color = event && ( colorInfo[event.color] || event.color );
+      const key = event && ( day + time + event.name );
+
+      return time in eventInfo[day]
+      ? <td key={key} rowSpan={(event.end - time) * 2} onClick={() => handleClick(key)} >
+          <Event event={event} color={color} active={key === active} />
+        </td>
+      : this.eventsAtTime(day, time).length === 0 && <td key={day + time} />
+    });
+
+    return (
+      <tr>
+        {timestamp}
+        {events}
+        {timestamp}
+      </tr>
+    );
+  }
 }
-
-export default Row;
