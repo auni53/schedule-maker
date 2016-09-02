@@ -13,7 +13,7 @@ function Event(props) {
 
     height: '100%',
     width: '100%',
-    borderRadius: '5px',
+    borderRadius: '4px',
 
     display: 'flex',
     alignItems: 'center',

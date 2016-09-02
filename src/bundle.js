@@ -21253,7 +21253,7 @@
 			"Wednesday": {
 				"10": {
 					"color": "green",
-					"end": 1,
+					"end": 13,
 					"location": "IDK",
 					"name": "UTSU Clubs Fair"
 				},
@@ -21415,7 +21415,7 @@
 	
 	    height: '100%',
 	    width: '100%',
-	    borderRadius: '5px',
+	    borderRadius: '4px',
 	
 	    display: 'flex',
 	    alignItems: 'center',
