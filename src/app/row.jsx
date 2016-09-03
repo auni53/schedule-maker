@@ -7,7 +7,7 @@ export default class Row extends React.Component {
 
   eventsAtTime(day, time) {
     return Object.keys(config.events[day]).filter( t => 
-      (t <= time && time < config.events[day][t].end)
+      (t <= time && time < config.events[day][t][0].end)
     );
   }
 
@@ -26,15 +26,20 @@ export default class Row extends React.Component {
     );
 
     const events = days.map( day => {
-      const event = eventInfo[day][time];
-      const color = event && ( colorInfo[event.color] || event.color );
-      const key = event && ( day + time + event.name );
+      const key = day + time;
 
-      return time in eventInfo[day]
-      ? <td key={key} rowSpan={(event.end - time) * 2} >
-          <Event event={event} color={color} active={key === active} />
-        </td>
-      : this.eventsAtTime(day, time).length === 0 && <td key={day + time} />
+            // <Event event={eventsAtTime[0]} color={colorInfo[eventsAtTime[0].color] || eventsAtTime[0].color} />
+      if (time in eventInfo[day]) {
+        const eventsAtTime = eventInfo[day][time];
+        const end = eventsAtTime[0].end;
+        return (
+          <td key={key} rowSpan={(end - time) * 2} >
+            {eventsAtTime.map(e => <Event key={e.name} n={eventsAtTime.length} event={e} color={colorInfo[e.color] || e.color} />)}
+          </td>
+        );
+      } else {
+        return this.eventsAtTime(day, time).length === 0 && <td key={key} />
+      }
     });
 
     return (

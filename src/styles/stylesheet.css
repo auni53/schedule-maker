@@ -1,15 +1,16 @@
 .table-container {
-  margin-left:auto;
-  margin-right:auto;
-  overflow-x:scroll;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .container {
-  margin-left:auto;
-  margin-right:auto;
-  overflow-x:scroll;
-  height:100%;
-  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll;
+  height: 100%;
+  width: 70%;
 
 }
 
@@ -22,68 +23,90 @@
 }
 
 #title {
-  width:960px;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:15px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
 }
 
 body {
-  background:#F6F4EE;
+  background: #F6F4EE;
 }
 
 h1 {
-  font-family:Antraste;
-  font-size:75.38px;
-  margin-bottom:5px;
-  margin-top:25px;
+  font-family: Antraste;
+  font-size: 75.38px;
+  margin-bottom: 5px;
+  margin-top: 25px;
 }
 
 h2 {
-  font-family:Gotham, Helvetica, Arial, sans-serif;
-  font-weight:700;
-  font-size:32pt;
-  line-height:32px;
-  margin-top:40px;
-  margin-bottom:30px;
-  text-decoration:underline;
+  font-family: Gotham, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 32pt;
+  line-height: 32px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-decoration: underline;
 }
 
 h3 {
-  font-family:Gotham, Helvetica, Arial, sans-serif;
-  font-size:20pt;
+  font-family: Gotham, Helvetica, Arial, sans-serif;
+  font-size: 20pt;
+  font-weight: bold;
 }
 
 #main {
   width: 1040px;
 }
 
+h4 {
+  padding: 10px 15px;
+  margin: 0;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.panel-heading {
+  padding: 0;
+}
+
 tr {
-  height:15px;
+  height: 15px;
   line-height: 14.5px;
 }
 
-th {
-  display: table-row;
-}
-
-td {
-  border:none;
-  border-left:5px solid transparent;
-  height:inherit;
+td, th {
+  border: none;
+  padding-left: 5px;
+  height: inherit;
   width: 150px;
-/*
-  padding:1px;
-  margin:0;
-  vertical-align:middle;
-  text-align:center;
+  /*
+  padding: 1px;
+  margin: 0;
+  vertical-align: middle;
+  text-align: center;
 */
 }
 
+.event { 
+  float: left;
+}
+
+.event:first-child {
+  margin-right: 1px;
+}
+.event:last-child {
+  margin-left: 1px;
+}
+
+
 .time {
-  width:30px;
-  font-family:Gotham, Helvetica Neue, Arial, sans-serif;
-  font-weight:700;
+  width: 30px;
+  font-family: Gotham, Helvetica Neue, Arial, sans-serif;
+  font-weight: 700;
 }
 
 .panel-group {
@@ -92,23 +115,24 @@ td {
 }
 
 .top {
-  width:135px;
-  height:69px;
+  width: 135px;
+  height: 69px;
+  color: #FFF;
 }
 
 .day {
-  font-family:Gotham, Helvetica Neue, Arial, sans-serif;
-  font-size:36px;
-  font-weight:700;
-  color:#FFF;
-  background-color:#000;
-  width:100%;
-  height:69px;
-  text-align:center;
-  line-height:69px;
-  margin:auto;
-  margin-bottom:4px;
-  display:block;
+  font-family: Gotham, Helvetica Neue, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: inherit;
+  background-color: #000;
+  width: 100%;
+  height: 69px;
+  text-align: center;
+  line-height: 69px;
+  margin: auto;
+  margin-bottom: 4px;
+  display: block;
 }
 
 .event {
@@ -144,62 +168,62 @@ td {
 }
 
 /* Hover animation */
-.event:hover {
-  transform:scale(1.04);
+.event: hover {
+  transform: scale(1.04);
 }
 
 @media max-width 699px{
   a.back-to-top {
-    right:5%;
-    bottom:5%;
+    right: 5%;
+    bottom: 5%;
   }
 }
 
 /* Class for the event description photos */
 .pic {
-  float:right;
-  width:120px;
-  height:120px;
-  border-radius:100%;
-  background-size:100% 100%;
+  float: right;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  background-size: 100% 100%;
 }
 
 /* Phone view */
 @media max-width 670px{
   #parent {
-    width:100vw;
+    width: 100vw;
   }
 
   .container {
-    width:100vw;
+    width: 100vw;
   }
 
   .table-container {
-    width:98vw;
+    width: 98vw;
   }
 
   .td {
-    width:300px;
+    width: 300px;
   }
 
   .top {
-    width:40vw;
+    width: 40vw;
   }
 }
 
   /* Normal view */
 @media min-width 670px{
   #title {
-    width:960px;
+    width: 960px;
   }
 
   .container {
-    width:670px;
+    width: 670px;
   }
 }
 
 @media max-width 970px{
 #title {
-  width:95%;
+  width: 95%;
 }
 }

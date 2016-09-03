@@ -23,241 +23,232 @@ schedule:
 events:
   Sunday: 
     10: 
-      color: blue
+    - color: blue
       end: 16
       name: Residence Move-In
       description: "The dean's office is a horrible institution and I hate them"
     16: 
-      color: green
+    - color: green
       end: 20
       name: Residence Orientation
       description: "Kelly Castle was fired from trin"
 
   Monday: 
+    9: 
+    - color: blue
+      end: 10.5
+      name: Commuter Registration
+      location: VC
     10.5: 
-      color: orange
+    - color: orange
       end: 12
       name: Meet Your Dons
     12: 
-      color: green
+    - color: green
       end: 13
       name: Grand Meet & Greet
     13:
-      color: blue
+    - color: blue
       end: 14
       name: Pizza with VUSAC
       location: Quad
     14: 
-      color: red
+    - color: red
       end: 15
       name: Opening Ceremonies
       location: Quad
     15: 
-      color: green
+    - color: green
       end: 16
       name: Frosh dance
       location: Quad
     16: 
-      color: gold
+    - color: gold
       end: 19
       name: Scavenger Hunt
       location: Quad
     19: 
-      color: purple
+    - color: purple
       end: 20.5
       name: Dissolve 
       location: BT
     21: 
-      color: gold
+    - color: gold
       end: 24
       name: Victory Night
       location: Cats Eye
+    - color: red
+      end: 24
+      name: Vic Lights
+      location: Alumni Hall
 
-#     21: 
-#       color: red
-#       end: 24
-#       name: Vic Lights
-#       location: Alumni Hall
-
-    9: 
-      color: blue
-      end: 10
-      name: Commuter Registration
-      location: VC
-  
   Tuesday: 
     11.5: 
-      color: blue
+    - color: blue
       end: 12.5
       location: Bader Theatre
       name: Dean's Welcome
     12.5: 
-      color: gold
+    - color: gold
       end: 13.5
       location: Northrop Frye Hall
       name: Sciences Guest Lecture
     13.5: 
-      color: red
+    - color: red
       end: 15
       location: Old Vic
       name: Sciences Guest Reception
     15: 
-      color: blue
+    - color: blue
       end: 16.5
       location: Old Vic
       name: Transitional Seminars
     17.5: 
-      color: rorange
+    - color: rorange
       end: 18.5
       location: Goldring Student Centre
       name: Doors Open GSC
     16.5: 
-      color: green
+    - color: green
       end: 17.5
       location: Bader Theatre
       name: Frosh Plays
-    19: 
-      color: gold
+    20: 
+    - color: gold
       end: 24
       location: Cat's Eye
       name: Karaoke
-    # 20: 
-    #   color: red
-    #   end: 24
-    #   location: Old Vic
-    #   name: Casino Night
+    - color: red
+      end: 24
+      location: Old Vic
+      name: Casino Night
     9.5: 
-      color: rorange
+    - color: rorange
       end: 11
       location: Burwash Dining Hall
       name: Breakfast With Your Presidents
 
   Wednesday: 
     10: 
-      color: red
+    - color: red
       end: 12
       location: Hart House Circle
       name: UTSU Clubs Fair
-#     10: 
-#       color: green
-#       end: 12
-#       location: Campus Tours
-#       name: Quad
+    - color: green
+      end: 12
+      location: Campus Tours
+      name: Quad
     12: 
-      color: blue
+    - color: blue
       end: 14
       location: Goldring Student Centre
-      name: Wellness Wednesdays
+      name: Wellness Wednesday
     15: 
-      color: red
+    - color: red
       end: 19
       location: Meet in Quad
       name: Traditionals
     19: 
-      color: blue
+    - color: blue
       end: 20.5
       location: Meet in Quad
       name: Dinner With the Dean
     22: 
-      color: red
+    - color: red
       end: 24
       location: Buses from Charles St
       name: Scarlet & Gold Party
-#     22: 
-#       color: gold
-#       end: 24
-#       location: Cat's Eye
-#       name: Movie Night
+    - color: gold
+      end: 24
+      location: Cat's Eye
+      name: Movie Night
   
   Thursday: 
     10: 
-      color: red
+    - color: red
       end: 11
       location: Northrop Frye Hall
       name: SECsy Time
-#     10: 
-#       color: gold
-#       end: 11
-#       location: Alumni Hall
-#       name: International Students' Reception
+    - color: gold
+      end: 11
+      location: Alumni Hall
+      name: International Students' Reception
     11.5: 
-      color: green
+    - color: green
       end: 12.5
       location: Quad
       name: Brunch With Innis
     12.5: 
-      color: gold
+    - color: gold
       end: 13.5
       location: Northrop Frye Hall
       name: Humanities Guest Lecture
     13.5: 
-      color: red
+    - color: red
       end: 15
       location: Old Vic
       name: Humanities Guest Reception
     15: 
-      color: rorange
+    - color: rorange
       end: 16.5
       location: Old Vic
       name: Transitional Seminars
     16.5: 
-      color: blue
+    - color: blue
       end: 17.5
       location: Cat's Eye
       name: Rainbow Sprinkles
     17.5: 
-      color: green
+    - color: green
       end: 18.5
       location: Quad
       name: Wacky Tacky Fashion Show
-#     19: 
-#       color: gold
-#       end: 22
-#       location: Cat's Eye
-#       name: Jam Session
     19: 
-      color: red
+    - color: gold
+      end: 22
+      location: Cat's Eye
+      name: Jam Session
+    - color: red
       end: 22
       name: Wacky Tacky Boat Cruise
     22: 
-      color: rorange
+    - color: rorange
       end: 24
       location: Goldring Student Centre
       name: Vic By Night
 
   Friday: 
     10: 
-      color: rorange
+    - color: rorange
       end: 14
       location: Quad
       name: Carnival & BBQ
-#     10: 
-#       color: gold
-#       end: 14
-#       location: Old Vic
-#       name: Vic Clubs Fair
+    - color: gold
+      end: 14
+      location: Old Vic
+      name: Vic Clubs Fair
     14: 
-      color: green
+    - color: green
       end: 16
       location: Meet in Quad
       name: UTSU Parade
     16: 
-      color: gold
+    - color: gold
       end: 19
       location: Front Campus
       name: UTSU Carnival
     19.5: 
-      color: red
+    - color: red
       end: 20.5
       location: Quad
       name: Closing Ceremonies
     20.5: 
-      color: blue
+    - color: blue
       end: 23.5
       location: Old Vic
       name: Open Mic Night
     23.5: 
-      color: green
+    - color: green
       end: 24
       location: TBD
       name: UTSU Afterparty & Alternative

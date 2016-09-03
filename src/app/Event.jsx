@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 
 function Event(props) {
-  const { event, color, active } = props;
+  const { event, n, color, active } = props;
 
   const style = {
     color: 'white',
@@ -12,7 +12,7 @@ function Event(props) {
     padding: '1px 5px',
 
     height: '100%',
-    width: '100%',
+    width: `calc(${100/n}% - ${n-1}px)`,
     borderRadius: '10px',
     wordWrap: 'break-word',
     textAlign: 'center',

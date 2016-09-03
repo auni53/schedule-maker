@@ -1,11 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
-import config from 'json!yaml!../config.yml';
 import Day from './Day.jsx';
+import config from 'json!yaml!../config.yml';
 
 function Descriptions(props) {
 
-  const eventInfo = config.events;
   const colorInfo = config.colors;    
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 
