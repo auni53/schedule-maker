@@ -9,21 +9,21 @@ function Event(props) {
     fontWeight: 500,
 
     background: color,
-    padding: '5px 0px',
+    padding: '1px 5px',
 
     height: '100%',
     width: '100%',
-    borderRadius: '4px',
-
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    borderRadius: '10px',
+    wordWrap: 'break-word',
+    textAlign: 'center',
   };
 
+  event.tag = event.name.split(' ').join('').toLowerCase();
+
   return (
-    <div style={style} >
+    <a className='event' style={style} href={`#${event.tag}`} >
       {event.name}
-    </div>
+    </a>
   );
 }
 

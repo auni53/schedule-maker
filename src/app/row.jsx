@@ -20,7 +20,7 @@ export default class Row extends React.Component {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 
     const timestamp = (time %1 === 0) && (
-      <td className="time" rowSpan="2">
+      <td className='time' rowSpan='2'>
         { time <= 12 ? time : time - 12 }
       </td>
     );
@@ -31,7 +31,7 @@ export default class Row extends React.Component {
       const key = event && ( day + time + event.name );
 
       return time in eventInfo[day]
-      ? <td key={key} rowSpan={(event.end - time) * 2} onClick={() => handleClick(key)} >
+      ? <td key={key} rowSpan={(event.end - time) * 2} >
           <Event event={event} color={color} active={key === active} />
         </td>
       : this.eventsAtTime(day, time).length === 0 && <td key={day + time} />
@@ -40,7 +40,7 @@ export default class Row extends React.Component {
     return (
       <tr>
         {timestamp}
-        {events}
+          {events}
         {timestamp}
       </tr>
     );

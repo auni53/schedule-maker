@@ -1,0 +1,225 @@
+colors:
+  blue:    "#3F51B5"
+  red:     "#DB2727"
+  orange:  "#EF6C00"
+  green:   "#4CAF50"
+  gold:    "#DCA828"
+  purple:  "#9C27B0"
+  teal:    "#009688"
+  lblue:   "#2196F3"
+  rorange: "#F44336"
+  pinky:   "#E91E63"
+  bgreen:  "#024640"
+  ggold:   "#827717"
+  bpurple: "#32004B"
+  cgrey:   "#607D8B"
+  dgreen:  "#024640"
+
+schedule:
+  logo: "assets/title.png"
+  start: 9
+  end: 24
+
+events:
+  Sunday: 
+    10: 
+      color: blue
+      end: 16
+      name: Residence Move-In
+    16: 
+      color: green
+      end: 20
+      name: Residence Orientation
+
+  Monday: 
+    10.5: 
+      color: orange
+      end: 12
+      name: Meet Your Dons
+    12: 
+      color: green
+      end: 13
+      name: Grand Meet & Greet
+    13: 
+      color: blue
+      end: 14
+      name: Pizza With VUSAC
+      location: Quad
+    14: 
+      color: red
+      end: 15
+      name: Opening Ceremonies
+      location: Quad
+    15: 
+      color: green
+      end: 16
+      name: Frosh dance
+      location: Quad
+    16: 
+      color: gold
+      end: 19
+      name: Scavenger Hunt
+      location: Quad
+    19: 
+      color: purple
+      end: 20.5
+      name: Dissolve 
+      location: BT
+    21: 
+      color: black
+      end: 24
+      name: Board Games
+      location: Cats Eye
+    9: 
+      color: blue
+      end: 10.5
+      name: Commuter Registration
+      location: VC
+  
+  Tuesday: 
+    11: 
+      color: red
+      end: 12.5
+      location: Bader Theatre
+      name: Dean's Welcome
+    12.5: 
+      color: blue
+      end: 1.5
+      location: Northrop Frye Hall
+      name: Sciences Guest Lecture
+    13.5: 
+      color: purple
+      end: 15
+      location: Old Vic
+      name: Sciences Guest Reception
+    15: 
+      color: blue
+      end: 16.5
+      location: idk
+      name: Transitional Seminars
+    16.5: 
+      color: gold
+      end: 17.5
+      location: Goldring Student Centre
+      name: Doors Open GSC
+    17.5: 
+      color: green
+      end: 19.5
+      location: Bader Theatre
+      name: Frosh Plays
+    20: 
+      color: orange
+      end: 24
+      location: Cat's Eye
+      name: Karaoke
+    9.5: 
+      color: gold
+      end: 11
+      location: Burwash Dining Hall
+      name: Breakfast With Your Presidents
+
+  Wednesday: 
+    10: 
+      color: green
+      end: 13
+      location: IDK
+      name: UTSU Clubs Fair
+    13: 
+      color: blue
+      end: 15.5
+      location: Goldring Student Centre
+      name: Mental Health & Wellness
+    15.5: 
+      color: gold
+      end: 17.5
+      location: Bader Theatre
+      name: Orientation Convocation
+    17.5: 
+      color: gold
+      end: 18.5
+      location: Old Vic
+      name: Alumni Reception
+    19.5: 
+      color: red
+      end: 21.5
+      location: Meet in Quad
+      name: Traditionals
+    22: 
+      color: blue
+      end: 24
+      location: Quad
+      name: Movie Night
+  
+  Thursday: 
+    10: 
+      color: gold
+      end: 11.5
+      location: Goldring Student Centre
+      name: Ask Your Leaders
+    11.5: 
+      color: purple
+      end: 12.5
+      location: Quad
+      name: Brunch With Innis
+    12.5: 
+      color: blue
+      end: 1.5
+      location: Northrop Frye Hall
+      name: Humanities Guest Lecture
+    13.5: 
+      color: purple
+      end: 15
+      location: Old Vic
+      name: Humanities Guest Reception
+    15: 
+      color: blue
+      end: 16.5
+      location: Old Vic
+      name: Transitional Seminars
+    17.5: 
+      color: green
+      end: 18.5
+      location: Quad
+      name: Wacky Tacky Fashion Show
+    19: 
+      color: green
+      end: 22
+      location: idk
+      name: Alternate Event
+    22: 
+      color: blue
+      end: 24
+      location: idk
+      name: Vic By Night
+
+  Friday: 
+    10: 
+      color: green
+      end: 14
+      location: Quad
+      name: Carnival & BBQ
+    14: 
+      color: gold
+      end: 16
+      location: Meet in Quad
+      name: UTSU Parade
+    16: 
+      color: gold
+      end: 19
+      location: Meet in Quad
+      name: UTSU Parade
+    19.5: 
+      color: red
+      end: 20.5
+      location: Quad
+      name: Closing Ceremonies
+    20.5: 
+      color: purple
+      end: 23.5
+      location: Old Vic
+      name: Open Mic Night
+    23.5: 
+      color: green
+      end: 24
+      location: idk
+      name: UTSU Alternative
