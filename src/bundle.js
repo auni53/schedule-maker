@@ -21147,9 +21147,6 @@
 	
 	  event.tag = event.name.split(' ').join('').toLowerCase();
 	
-	  var node = (0, _reactDom.findDOMNode)(event.tag);
-	  if (node) console.log(node);
-	
 	  return _react2.default.createElement(
 	    'a',
 	    { className: 'event', style: style, href: '#' + event.tag },
@@ -21265,7 +21262,7 @@
 	    ),
 	    _react2.default.createElement(
 	      _reactBootstrap.Accordion,
-	      { activeKey: window.location.hash.replace('#', '') },
+	      null,
 	      times.map(function (eventTime) {
 	        var eventsAtTime = eventInfo[day][eventTime];
 	        if (!eventsAtTime) return;
@@ -41432,7 +41429,8 @@
 						"color": "green",
 						"end": 16,
 						"name": "Frosh dance",
-						"location": "Quad"
+						"location": "Quad",
+						"description": "at vic, equity language is appropriated to blame and shame anyone who disagrees with the dean's office"
 					}
 				],
 				"16": [
