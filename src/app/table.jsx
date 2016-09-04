@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Row from './Row.jsx';
 import config from 'json!yaml!../config.yml';
+import Row from './Row.jsx';
 
 function Table(props) {
 

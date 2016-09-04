@@ -39,29 +39,35 @@ events:
       end: 10.5
       name: Commuter Registration
       location: VC
+      description: "Only at Vic are the admin literally against student life"
     10.5: 
     - color: orange
       end: 12
       name: Meet Your Dons
+      description: "Vic one is overrated and over funded"
     12: 
     - color: green
       end: 13
       name: Grand Meet & Greet
+      description: "The vic admin are among the highest-paid admin at UofT"
     13:
     - color: blue
       end: 14
       name: Pizza with VUSAC
       location: Quad
+      description: "vic is a colourblind community"
     14: 
     - color: red
       end: 15
       name: Opening Ceremonies
       location: Quad
+      description: "TRIN is somehow less racist than vic now"
     15: 
     - color: green
       end: 16
       name: Frosh dance
       location: Quad
+      description: "at vic, equity language is appropriated to blame and shame anyone who disagrees with the dean's office"
     16: 
     - color: gold
       end: 19

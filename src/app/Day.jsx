@@ -24,7 +24,7 @@ function Day({ day }) {
   return (
     <span id='panel'>
       <h3 id="SUN">{day}</h3>
-      <Accordion>
+      <Accordion activeKey={window.location.hash.replace('#', '')} >
         { times.map(eventTime => {
             const eventsAtTime = eventInfo[day][eventTime];
             if (!eventsAtTime) return;
@@ -40,12 +40,14 @@ function Day({ day }) {
                     {event.name}
                     <span style={spanStyle}>{formatTime(eventTime)}</span>
                   </h4>
-                </a>);
+                </a>
+              );
 
               return (
                   <Panel key={event.tag}
                          header={anchor}
-                         eventKey={event.tag + 'C'}
+                         eventKey={event.tag}
+                         ref={event.tag}
                          >
                     {event.description}
                     {/*<img className="pic" src={`src/res/${event.tag}.jpg`} />*/}

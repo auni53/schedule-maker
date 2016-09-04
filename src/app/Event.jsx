@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { findDOMNode, render } from 'react-dom';
 
 function Event(props) {
   const { event, n, color, active } = props;
@@ -19,6 +19,9 @@ function Event(props) {
   };
 
   event.tag = event.name.split(' ').join('').toLowerCase();
+
+  const node = findDOMNode(event.tag);
+  if (node) console.log(node);
 
   return (
     <a className='event' style={style} href={`#${event.tag}`} >

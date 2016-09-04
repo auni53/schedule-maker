@@ -28,7 +28,6 @@ export default class Row extends React.Component {
     const events = days.map( day => {
       const key = day + time;
 
-            // <Event event={eventsAtTime[0]} color={colorInfo[eventsAtTime[0].color] || eventsAtTime[0].color} />
       if (time in eventInfo[day]) {
         const eventsAtTime = eventInfo[day][time];
         const end = eventsAtTime[0].end;

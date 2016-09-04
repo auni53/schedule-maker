@@ -20896,13 +20896,13 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 38);
 	
-	var _Row = __webpack_require__(/*! ./Row.jsx */ 169);
-	
-	var _Row2 = _interopRequireDefault(_Row);
-	
 	var _config = __webpack_require__(/*! json!yaml!../config.yml */ 439);
 	
 	var _config2 = _interopRequireDefault(_config);
+	
+	var _Row = __webpack_require__(/*! ./Row.jsx */ 169);
+	
+	var _Row2 = _interopRequireDefault(_Row);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -21066,7 +21066,6 @@
 	      var events = days.map(function (day) {
 	        var key = day + time;
 	
-	        // <Event event={eventsAtTime[0]} color={colorInfo[eventsAtTime[0].color] || eventsAtTime[0].color} />
 	        if (time in eventInfo[day]) {
 	          var _ret = function () {
 	            var eventsAtTime = eventInfo[day][time];
@@ -21148,6 +21147,9 @@
 	
 	  event.tag = event.name.split(' ').join('').toLowerCase();
 	
+	  var node = (0, _reactDom.findDOMNode)(event.tag);
+	  if (node) console.log(node);
+	
 	  return _react2.default.createElement(
 	    'a',
 	    { className: 'event', style: style, href: '#' + event.tag },
@@ -21187,7 +21189,6 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function Descriptions(props) {
-	
 	  var colorInfo = _config2.default.colors;
 	  var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 	
@@ -21264,7 +21265,7 @@
 	    ),
 	    _react2.default.createElement(
 	      _reactBootstrap.Accordion,
-	      null,
+	      { activeKey: window.location.hash.replace('#', '') },
 	      times.map(function (eventTime) {
 	        var eventsAtTime = eventInfo[day][eventTime];
 	        if (!eventsAtTime) return;
@@ -21293,7 +21294,8 @@
 	            _reactBootstrap.Panel,
 	            { key: event.tag,
 	              header: anchor,
-	              eventKey: event.tag + 'C'
+	              eventKey: event.tag,
+	              ref: event.tag
 	            },
 	            event.description
 	          );
@@ -41395,14 +41397,16 @@
 						"color": "blue",
 						"end": 10.5,
 						"name": "Commuter Registration",
-						"location": "VC"
+						"location": "VC",
+						"description": "Only at Vic are the admin literally against student life"
 					}
 				],
 				"12": [
 					{
 						"color": "green",
 						"end": 13,
-						"name": "Grand Meet & Greet"
+						"name": "Grand Meet & Greet",
+						"description": "The vic admin are among the highest-paid admin at UofT"
 					}
 				],
 				"13": [
@@ -41410,7 +41414,8 @@
 						"color": "blue",
 						"end": 14,
 						"name": "Pizza with VUSAC",
-						"location": "Quad"
+						"location": "Quad",
+						"description": "vic is a colourblind community"
 					}
 				],
 				"14": [
@@ -41418,7 +41423,8 @@
 						"color": "red",
 						"end": 15,
 						"name": "Opening Ceremonies",
-						"location": "Quad"
+						"location": "Quad",
+						"description": "TRIN is somehow less racist than vic now"
 					}
 				],
 				"15": [
@@ -41463,7 +41469,8 @@
 					{
 						"color": "orange",
 						"end": 12,
-						"name": "Meet Your Dons"
+						"name": "Meet Your Dons",
+						"description": "Vic one is overrated and over funded"
 					}
 				]
 			},
