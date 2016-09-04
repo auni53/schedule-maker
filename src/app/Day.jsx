@@ -49,6 +49,7 @@ function Day({ day }) {
                          eventKey={event.tag}
                          ref={event.tag}
                          >
+
                     {event.description}
                     {/*<img className="pic" src={`src/res/${event.tag}.jpg`} />*/}
                   </Panel>

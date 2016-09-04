@@ -41376,7 +41376,7 @@
 						"color": "blue",
 						"end": 16,
 						"name": "Residence Move-In",
-						"description": "The dean's office is a horrible institution and I hate them"
+						"description": "So you’ve made it to Victoria College – now what?\nCheck in and get your frosh ID, Vic swag, and keys before moving into your residence building!\nGet to know your residence mates and find out more about what your year on campus is going to be like!\n"
 					}
 				],
 				"16": [
@@ -41451,16 +41451,16 @@
 				],
 				"21": [
 					{
-						"color": "gold",
-						"end": 24,
-						"name": "Victory Night",
-						"location": "Cats Eye"
-					},
-					{
 						"color": "red",
 						"end": 24,
 						"name": "Vic Lights",
 						"location": "Alumni Hall"
+					},
+					{
+						"color": "gold",
+						"end": 24,
+						"name": "Victory Night",
+						"location": "Cats Eye"
 					}
 				],
 				"10.5": [
@@ -41483,16 +41483,24 @@
 				],
 				"20": [
 					{
+						"color": "red",
+						"end": 24,
+						"location": "Old Vic",
+						"name": "Casino Royale"
+					},
+					{
 						"color": "gold",
 						"end": 24,
 						"location": "Cat's Eye",
 						"name": "Karaoke"
-					},
+					}
+				],
+				"9.5": [
 					{
-						"color": "red",
-						"end": 24,
-						"location": "Old Vic",
-						"name": "Casino Night"
+						"color": "rorange",
+						"end": 11,
+						"location": "Burwash Dining Hall",
+						"name": "Breakfast With Your Presidents"
 					}
 				],
 				"11.5": [
@@ -41507,7 +41515,7 @@
 					{
 						"color": "gold",
 						"end": 13.5,
-						"location": "Northrop Frye Hall",
+						"location": "NF003",
 						"name": "Sciences Guest Lecture"
 					}
 				],
@@ -41533,14 +41541,6 @@
 						"end": 17.5,
 						"location": "Bader Theatre",
 						"name": "Frosh Plays"
-					}
-				],
-				"9.5": [
-					{
-						"color": "rorange",
-						"end": 11,
-						"location": "Burwash Dining Hall",
-						"name": "Breakfast With Your Presidents"
 					}
 				]
 			},
@@ -41623,15 +41623,15 @@
 				],
 				"19": [
 					{
+						"color": "red",
+						"end": 22,
+						"name": "Wacky Tacky Boat Cruise"
+					},
+					{
 						"color": "gold",
 						"end": 22,
 						"location": "Cat's Eye",
 						"name": "Jam Session"
-					},
-					{
-						"color": "red",
-						"end": 22,
-						"name": "Wacky Tacky Boat Cruise"
 					}
 				],
 				"22": [
@@ -41654,7 +41654,7 @@
 					{
 						"color": "gold",
 						"end": 13.5,
-						"location": "Northrop Frye Hall",
+						"location": "NF003",
 						"name": "Humanities Guest Lecture"
 					}
 				],
@@ -41687,18 +41687,18 @@
 				"10": [
 					{
 						"color": "rorange",
-						"end": 14,
+						"end": 12,
 						"location": "Quad",
 						"name": "Carnival & BBQ"
 					},
 					{
 						"color": "gold",
-						"end": 14,
+						"end": 12,
 						"location": "Old Vic",
 						"name": "Vic Clubs Fair"
 					}
 				],
-				"14": [
+				"12": [
 					{
 						"color": "green",
 						"end": 16,
