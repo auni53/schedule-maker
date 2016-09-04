@@ -25,118 +25,183 @@ events:
     10: 
     - color: blue
       end: 16
-      name: Residence Move-In
-      description: |
-        So you’ve made it to Victoria College – now what?
-        Check in and get your frosh ID, Vic swag, and keys before moving into your residence building!
-        Get to know your residence mates and find out more about what your year on campus is going to be like!
-
+      name: "Residence Check-In & Move-In"
+      location: Old Vic and your Residence Building
+      description: | 
+        So you've made it to Victoria College - now what?
+        Check in and get your frosh ID, Vic Swag, and keys before moving
+        into your residence building!
     16: 
     - color: green
       end: 20
       name: Residence Orientation
-      description: "Kelly Castle was fired from trin"
+      location: Residence or House Common Room
+      description: "Get to know your residence mates!"
 
   Monday: 
     9: 
     - color: blue
-      end: 10.5
+      end: 10
       name: Commuter Registration
-      location: VC
-      description: "Only at Vic are the admin literally against student life"
+      location: Old Vic Foyer
+      description: |
+        Welcome to Vic! Frosh kits await you along with lots of important and exciting
+        information! Grab keys for your room if you opted to stay on residence for the
+        week and drop off your stuff before getting your Orientation week offically started!
     10.5: 
     - color: orange
       end: 12
       name: Meet Your Dons
-      description: "Vic one is overrated and over funded"
+      location: Quad
+      description: |
+        Come and have a chat with your Commuter Dons in the quad! They will 
+        be present throughout the year and happy to answer you questions!
     12: 
     - color: green
-      end: 13
-      name: Grand Meet & Greet
-      description: "The vic admin are among the highest-paid admin at UofT"
-    13:
-    - color: blue
       end: 14
-      name: Pizza with VUSAC
+      name: "Grand Meet & Greet and Pizza with VUSAC"
       location: Quad
-      description: "vic is a colourblind community"
+      description:  |
+        A quick introduction to your Orientation Executive team,
+        the leaders, dons, and VUSAC student council. These are the people you'll
+        be spending Orientation Week with and who will be available to answer all your 
+        questions. Pizza will be provided after the introduction.
     14: 
     - color: red
       end: 15
       name: Opening Ceremonies
       location: Quad
-      description: "TRIN is somehow less racist than vic now"
+      description: | 
+        The official start to Orientation Week! You will be introduced and welcomed
+        to Victoria College, and hear various speeches by the Dean's Office and Victoria
+        University Administration, and student leaders, while getting an overview of the
+        upcoming week! Special guests include your Dean of Students, Kelley Castle.
     15: 
     - color: green
       end: 16
       name: Frosh dance
       location: Quad
-      description: "at vic, equity language is appropriated to blame and shame anyone who disagrees with the dean's office"
+      description: Learn some sweet moves to use as your school spirit for the week.
     16: 
     - color: gold
       end: 19
       name: Scavenger Hunt
       location: Quad
+      description: |
+        Test your wit, grit, and teamwork while exploring the Victoria College Campus,
+        and taking in the scenery - all in a timed race to see which group can
+        solve their clues and finish first. Have you got what it takes?
     19: 
     - color: purple
       end: 20.5
       name: Dissolve 
       location: BT
+      description: |
+        Content Warning: Sexual Violence
+        Dissolve is a brilliant and incredibly important one-person show about date rape
+        that has opened hundreds of minds over the many years it has been performed at Vic!
     21: 
     - color: red
       end: 24
       name: Vic Lights
       location: Alumni Hall
+      description: |
+        Had fun Milly Rocking in the Quad during the day? Join us for a dance party in 
+        Old Vic! Dance the night away in one of Vic’s most renowned spaces. See y’all there! 
     - color: gold
       end: 24
       name: Victory Night
       location: Cats Eye
-
+      description: |
+        Done bustin’ moves at the dance? Come by for a fun night of classic boardgames and 
+        various arts and crafts and play or craft yourself in the wee hours.
+  
   Tuesday: 
     9.5: 
     - color: rorange
       end: 11
       location: Burwash Dining Hall
       name: Breakfast With Your Presidents
+      description: |
+        Burwash Dining Hall - Join the president of Victoria University, Professor William Robins,
+        and the co-presidents of the Victoria University Students’ dministrative Council (VUSAC), 
+        Rahul Christophersen & Stuart Norton!
     11.5: 
     - color: blue
       end: 12.5
       location: Bader Theatre
       name: Dean's Welcome
+      description: |
+        Meet your Registrar's Office and develop an understanding for making the most out 
+        of your university experience. These friendly faces will be there for you every 
+        step of your university journey; you just have to take the first step!
     12.5: 
     - color: gold
       end: 13.5
       location: NF003
       name: Sciences Guest Lecture
+      description: |
+        Mock lectures are given by two professors in the sciences! Whether you are in 
+        humanities or sciences, come and get a preview of what’s to come at U of T.
+
     13.5: 
     - color: red
       end: 15
       location: Old Vic
       name: Sciences Guest Reception
+      description: |
+        Interested in taking a couple of science courses? Plan on enrolling
+        in a science-related program of study? Then come on by and mingle with 
+        your future professors during this informal meet and greet! 
     15: 
     - color: blue
       end: 16.5
       location: Old Vic
-      name: Transitional Seminars
-    17.5: 
-    - color: rorange
-      end: 18.5
-      location: Goldring Student Centre
-      name: Doors Open GSC
+      name: Transitional Seminars I
+      description: |
+        Get advice and tips on starting off your university experience 
+        as a successful and involved student. Sessions run back-to-back 
+        for 45 mins each (pick two!): being ready for first year, note 
+        taking, commuting 101, and library 101.
     16.5: 
     - color: green
       end: 17.5
       location: Bader Theatre
       name: Frosh Plays
-    20: 
-    - color: red
-      end: 24
-      location: Old Vic
-      name: Casino Royale
+      description: |
+        Do you like comedy? Do you like drama? Do you like songs about the various
+        trials and tribulations of life here at U of T? Then come out and watch our
+        hilarious (and sometimes touching) skits and scenes all written and performed 
+        by your fellow Victorians!
+    17.5: 
+    - color: rorange
+      end: 18.5
+      location: Goldring Student Centre
+      name: Doors Open GSC
+      description: |
+        Goldring Student Centre - Get a tour of Vic’s very own student centre as well
+        participate in workshop activities with VOCA, VCAA, the Arts & Crafts Club, 
+        the Fencing Club, and many more. Get a taste of what some of our clubs have to offer!
+    20:
     - color: gold
       end: 24
       location: Cat's Eye
       name: Karaoke
+      description: |
+        Do you love to sing? Whether you're a professional Adele impersonator or a 
+        professional shower singer, come on out and belt out some lyrics (or 
+        mouth along instead)! All music tastes are more than welcome, so be sure 
+        to end off the night on a high note and don't miss out! 
+    - color: red
+      end: 24
+      location: Old Vic
+      name: Casino Night
+      description: |
+        Greetings, secret agents. We have a mission for you: Try your luck at the 
+        Grand Casino Royale. Choose from a variety of table games and attractions,
+        and sip on mocktails as you wait for your big break. And if your skills are
+        rusty and you're feeling shaken (and not stirred), don't worry -- there are
+         plenty of leaders to help you out! 
 
   Wednesday: 
     10: 
@@ -144,34 +209,61 @@ events:
       end: 12
       location: Hart House Circle
       name: UTSU Clubs Fair
+      description: |
+        See the myriad of clubs (over 200!) U of T has to offer and get involved outside 
+        of class-before classes!
     - color: green
       end: 12
-      location: Campus Tours
-      name: Quad
+      name: Campus Tours
+      location: Quad
+      description: | 
+        I can show you the world (shining shimmering splendid). Join us for campus tours
+        on Wednesday! Whether you want to know where to find your classes or map out the 
+        best nap locations, the Hitchhiker's Guide to UofT is the event for you!
     12: 
     - color: blue
       end: 14
       location: Goldring Student Centre
-      name: Wellness Wednesday
+      name: Wellness Wednesdays
+      description: |
+        This event is a great way to start off the year by learning about the resources, 
+        strategies and services available to assist in maintaining emotional, mental and 
+        physical wellness during a possibly stressful school year. Come hang out with some 
+        adorable therapy dogs (Woof!) and join us for Zumba in the quad.
     15: 
     - color: red
       end: 19
       location: Meet in Quad
       name: Traditionals
+      description: |
+        Take part in one of the many traditions at Victoria College, and gain knowledge of 
+        the history of Victoria College students, while cementing bonds of friendship and 
+        community. New to this year: there will be one combined ceremony for all students 
+        starting in the Victoria College Quad and continuing in Convocation Hall.
     19: 
     - color: blue
       end: 20.5
       location: Meet in Quad
       name: Dinner With the Dean
+      description: |
+        Come by for a free dinner with the Dean of Students before heading over to the 
+        Scarlet & Gold Party!
     22: 
     - color: red
       end: 24
       location: Buses from Charles St
-      name: Scarlet & Gold Party
+      name: "Scarlet & Gold Party"
+      description: |
+        Meet outside the Goldring Student Centre - the Scarlet and Gold SemiFormal Party
+        is held at a ‘secret’ location - one of Toronto’s hottest venues! So throw on your 
+        best threads and meet us by the buses - let’s party!
     - color: gold
       end: 24
       location: Cat's Eye
       name: Movie Night
+      description: |
+        Don’t feel like busting some moves? Come on out and settle into some comfy 
+        leather sofas and enjoy an easy-going movie night!
   
   Thursday: 
     10: 
@@ -179,86 +271,169 @@ events:
       end: 11
       location: Northrop Frye Hall
       name: SECsy Time
+      description: |
+        Join us for an informative, nonjudgmental and shamefree presentation on 
+        consent, boundaries, healthy relationships and sex! 
     - color: gold
       end: 11
       location: Alumni Hall
       name: International Students' Reception
+      description: |
+        Are you from outside of Canada or new to Toronto? This awesome and informal
+        event is just what you need! Listen to our amazing speakers, chat and munch
+        on breakfast goodies with upper year international students who are excited
+        to share their experiences, and make new friends. 
     11.5: 
     - color: green
       end: 12.5
       location: Quad
       name: Brunch With Innis
+      description: |
+        Join us in the Quad as we honor the longstanding relationship between 
+        Victoria and Innis with some good old-fashioned (free) brunch! Break bread,
+        or pizza in this case, with Vic and Innis peers alike, and showcase your
+        Vic pride with a cheer + frosh dance-off against Innis. Vic <3’s Innis!
     12.5: 
     - color: gold
       end: 13.5
       location: NF003
       name: Humanities Guest Lecture
+      description: |
+        Come hear mock lectures given by two professors in the humanities! This is a 
+        great opportunity to get a glimpse of what’s to come on your academic journey.
     13.5: 
     - color: red
       end: 15
       location: Old Vic
       name: Humanities Guest Reception
+      description: | 
+        Come mix and mingle with humanities and social science professors from across 
+        UofT! You'll have the opportunity to ask many first year professors from a variety
+        of departments about the courses they teach and the subject posts they recommend, 
+        as well as valuable tips and tricks to doing well in first year and beyond. 
+        Refreshments will be provided.  
     15: 
     - color: rorange
       end: 16.5
       location: Old Vic
-      name: Transitional Seminars
+      name: Transitional Seminars II
+      description: | 
+        Get advice and tips on starting off your university experience as a successful and 
+        involved student at Vic! Sessions run back-to-back for 45 mins each (pick two!): 
+        Being Career Minded, Going Abroad, Writing at University, Mental Health and 
+        Accessibility, and CCR and Student Life.
     16.5: 
     - color: blue
       end: 17.5
       location: Cat's Eye
       name: Rainbow Sprinkles
+      description: |
+        Calling all LBGTQ2S identified-people and allies alike! This is your chance to 
+        acquaint yourself with the LBGTQ2S specific resources, communities and groups 
+        that are available at Vic, U of T, and beyond. Join us in a low-key, positive 
+        space and bring your sweet tooth to enjoy some ice cream!
     17.5: 
     - color: green
       end: 18.5
       location: Quad
       name: Wacky Tacky Fashion Show
+      description: |
+        Prep yourself for the Wacky Tacky Boat Cruise with a huge selection of the 
+        wackiest and tackiest clothing, then strutt your stuff down our runway to the 
+        photo booth. Tokens for purchase will also be available at this time for the 
+        Boat Cruise at the Harbourfront.
     19: 
-    - color: red
-      end: 22
-      name: Wacky Tacky Boat Cruise
     - color: gold
       end: 22
       location: Cat's Eye
       name: Jam Session
+      description: |
+        All wackied and/or tackied out? Come join the Jam session in the Cat's Eye
+        for some relaxed music playing and mingling. People of all skill levels are
+        welcome!
+    - color: red
+      end: 22
+      location: Quad
+      name: Wacky Tacky Boat Cruise
+      description: |
+        After strutting your stuff on the catwalk, take the party to the Harbourfront. 
+        Whether you’re on the Northern Spirit or the Kajama, get ready to dance your 
+        heart out while decked out in your tackiest attire. Bags and water bottles 
+        are NOT permitted, but bring your ticket, frosh ID, and TTC tokens (which 
+        you can buy during the fashion show)!
     22: 
     - color: rorange
       end: 24
       location: Goldring Student Centre
       name: Vic By Night
+      description: | 
+        Go on a ghost tour to learn which spooky spirits haunt our campus, play 
+        Werewolf in the Cat's Eye, or chill with leaders in the quad -- take your pick!
+
 
   Friday: 
     10: 
     - color: rorange
       end: 12
       location: Quad
-      name: Carnival & BBQ
+      name: "Carnival & BBQ"
+      description: |
+        The carnival is coming to town! Whether you enjoy eating, playing tug-of-war, 
+        or launching giant inflatable wrecking balls at your fellow frosh, the 
+        Carnival has it all!
     - color: gold
       end: 12
       location: Old Vic
       name: Vic Clubs Fair
-    12: 
+      description: |
+        While you munch on burgers and hot dogs, come and learn about the awesome 
+        number of clubs, levies, and groups that Vic has to offer! Discover different 
+        activities, fi nd ways to get involved, and develop new passions!
+    12:
     - color: green
       end: 16
       location: Meet in Quad
       name: UTSU Parade
+      description: |
+        One of the most famous Orientation events, the parade marches 5000 students 
+        from all three U of T campuses through downtown Toronto, walking through the city’s
+        biggest streets and cheering as loud as possible. And it all starts with a 
+        cheer-off between colleges at Varsity Stadium. Be sure to wear your Vic t-shirt
+        and bring your cheering voices!
     16: 
     - color: gold
       end: 19
       location: Front Campus
       name: UTSU Carnival
+      description:  |
+        As the parade comes to an end join in on the carnival hosted by UTSU for some 
+        after-parade fun and mingling! There will be food vendors, giveaways, raffles, 
+        games, carnival rides, and much more. 
     19.5: 
     - color: red
       end: 20.5
       location: Quad
       name: Closing Ceremonies
+      description: |
+        Celebrate the end of Orientation Week 2016 with closing remarks and one final 
+        frosh dance, before beginning your journey as an undergraduate student here 
+        at Victoria College.
     20.5: 
     - color: blue
       end: 23.5
       location: Old Vic
       name: Open Mic Night
+      description: |
+        End off the week in good vibes (and snacks) at Open Mic Night - a chance 
+        to sing your heart out, unveil your poetic skill, or show off your other 
+        cool and quirky talents. Or just come along to sit back and enjoy the show,
+        chill, and reflect on the week!
     23.5: 
     - color: green
       end: 24
       location: TBD
-      name: UTSU Afterparty & Alternative
+      name: "UTSU Afterparty & Alternative"
+      description: |
+        One of the biggest Orientation afterparties in Canada, there’s a free 
+        bussing service leaving from Hart House Circle all night! It’s free if
+        you have a T-Card!

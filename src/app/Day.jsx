@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import config from 'json!yaml!../config.yml';
 import { Accordion, Panel } from 'react-bootstrap';
+import Image from './Image.jsx';
 
 function formatTime(number) {
   let midiStatus = number < 12 ? ' am' : ' pm';
@@ -51,7 +52,10 @@ function Day({ day }) {
                          >
 
                     {event.description}
-                    {/*<img className="pic" src={`src/res/${event.tag}.jpg`} />*/}
+                    <Image filename={event.tag} />
+
+                    <br/><br/>
+                    <span style={{float: 'down' }}>Location: <b>{event.location}</b></span>
                   </Panel>
               );
             }
