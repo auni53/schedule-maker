@@ -20896,11 +20896,11 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 38);
 	
-	var _config = __webpack_require__(/*! json!yaml!../config.yml */ 439);
+	var _config = __webpack_require__(/*! json!yaml!../config.yml */ 169);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
-	var _Row = __webpack_require__(/*! ./Row.jsx */ 169);
+	var _Row = __webpack_require__(/*! ./Row.jsx */ 170);
 	
 	var _Row2 = _interopRequireDefault(_Row);
 	
@@ -20989,6 +20989,443 @@
 
 /***/ },
 /* 169 */
+/*!********************************************************!*\
+  !*** ./~/json-loader!./~/yaml-loader!./src/config.yml ***!
+  \********************************************************/
+/***/ function(module, exports) {
+
+	module.exports = {
+		"colors": {
+			"blue": "#3F51B5",
+			"red": "#DB2727",
+			"orange": "#EF6C00",
+			"green": "#4CAF50",
+			"gold": "#DCA828",
+			"purple": "#9C27B0",
+			"teal": "#009688",
+			"lblue": "#2196F3",
+			"rorange": "#F44336",
+			"pinky": "#E91E63",
+			"bgreen": "#024640",
+			"ggold": "#827717",
+			"bpurple": "#32004B",
+			"cgrey": "#607D8B",
+			"dgreen": "#024640"
+		},
+		"schedule": {
+			"logo": "assets/title.png",
+			"start": 9,
+			"end": 24
+		},
+		"events": {
+			"Sunday": {
+				"10": [
+					{
+						"color": "blue",
+						"end": 16,
+						"name": "Residence Check-In & Move-In",
+						"location": "Old Vic and your Residence Building",
+						"description": "So you've made it to Victoria College - now what?\nCheck in and get your frosh ID, Vic Swag, and keys before moving\ninto your residence building!\n"
+					}
+				],
+				"16": [
+					{
+						"color": "green",
+						"end": 20,
+						"name": "Residence Orientation",
+						"location": "Residence or House Common Room",
+						"description": "Get to know your residence mates!"
+					}
+				]
+			},
+			"Monday": {
+				"9": [
+					{
+						"color": "blue",
+						"end": 10,
+						"name": "Commuter Registration",
+						"location": "Old Vic Foyer",
+						"description": "Welcome to Vic! Frosh kits await you along with lots of important and exciting\ninformation! Grab keys for your room if you opted to stay on residence for the\nweek and drop off your stuff before getting your Orientation week offically started!\n"
+					}
+				],
+				"12": [
+					{
+						"color": "green",
+						"end": 14,
+						"name": "Grand Meet & Greet and Pizza with VUSAC",
+						"location": "Quad",
+						"description": "A quick introduction to your Orientation Executive team,\nthe leaders, dons, and VUSAC student council. These are the people you'll\nbe spending Orientation Week with and who will be available to answer all your \nquestions. Pizza will be provided after the introduction.\n"
+					}
+				],
+				"14": [
+					{
+						"color": "red",
+						"end": 15,
+						"name": "Opening Ceremonies",
+						"location": "Quad",
+						"description": "The official start to Orientation Week! You will be introduced and welcomed\nto Victoria College, and hear various speeches by the Dean's Office and Victoria\nUniversity Administration, and student leaders, while getting an overview of the\nupcoming week! Special guests include your Dean of Students, Kelley Castle.\n"
+					}
+				],
+				"15": [
+					{
+						"color": "green",
+						"end": 16,
+						"name": "Frosh dance",
+						"location": "Quad",
+						"description": "Learn some sweet moves to use as your school spirit for the week."
+					}
+				],
+				"16": [
+					{
+						"color": "gold",
+						"end": 19,
+						"name": "Scavenger Hunt",
+						"location": "Quad",
+						"description": "Test your wit, grit, and teamwork while exploring the Victoria College Campus,\nand taking in the scenery - all in a timed race to see which group can\nsolve their clues and finish first. Have you got what it takes?\n"
+					}
+				],
+				"19": [
+					{
+						"color": "purple",
+						"end": 20.5,
+						"name": "Dissolve",
+						"location": "BT",
+						"description": "Content Warning: Sexual Violence\nDissolve is a brilliant and incredibly important one-person show about date rape\nthat has opened hundreds of minds over the many years it has been performed at Vic!\n"
+					}
+				],
+				"21": [
+					{
+						"color": "red",
+						"end": 24,
+						"name": "Vic Lights",
+						"location": "Alumni Hall",
+						"description": "Had fun Milly Rocking in the Quad during the day? Join us for a dance party in \nOld Vic! Dance the night away in one of Vic’s most renowned spaces. See y’all there! \n"
+					},
+					{
+						"color": "gold",
+						"end": 24,
+						"name": "Victory Night",
+						"location": "Cats Eye",
+						"description": "Done bustin’ moves at the dance? Come by for a fun night of classic boardgames and \nvarious arts and crafts and play or craft yourself in the wee hours.\n"
+					}
+				],
+				"10.5": [
+					{
+						"color": "orange",
+						"end": 12,
+						"name": "Meet Your Dons",
+						"location": "Quad",
+						"description": "Come and have a chat with your Commuter Dons in the quad! They will \nbe present throughout the year and happy to answer you questions!\n"
+					}
+				]
+			},
+			"Tuesday": {
+				"15": [
+					{
+						"color": "blue",
+						"end": 16.5,
+						"location": "Old Vic",
+						"name": "Transitional Seminars I",
+						"description": "Get advice and tips on starting off your university experience \nas a successful and involved student. Sessions run back-to-back \nfor 45 mins each (pick two!): being ready for first year, note \ntaking, commuting 101, and library 101.\n"
+					}
+				],
+				"20": [
+					{
+						"color": "gold",
+						"end": 24,
+						"location": "Cat's Eye",
+						"name": "Karaoke",
+						"description": "Do you love to sing? Whether you're a professional Adele impersonator or a \nprofessional shower singer, come on out and belt out some lyrics (or \nmouth along instead)! All music tastes are more than welcome, so be sure \nto end off the night on a high note and don't miss out! \n"
+					},
+					{
+						"color": "red",
+						"end": 24,
+						"location": "Old Vic",
+						"name": "Casino Night",
+						"description": "Greetings, secret agents. We have a mission for you: Try your luck at the \nGrand Casino Royale. Choose from a variety of table games and attractions,\nand sip on mocktails as you wait for your big break. And if your skills are\nrusty and you're feeling shaken (and not stirred), don't worry -- there are\n plenty of leaders to help you out! \n"
+					}
+				],
+				"9.5": [
+					{
+						"color": "rorange",
+						"end": 11,
+						"location": "Burwash Dining Hall",
+						"name": "Breakfast With Your Presidents",
+						"description": "Burwash Dining Hall - Join the president of Victoria University, Professor William Robins,\nand the co-presidents of the Victoria University Students’ dministrative Council (VUSAC), \nRahul Christophersen & Stuart Norton!\n"
+					}
+				],
+				"11.5": [
+					{
+						"color": "blue",
+						"end": 12.5,
+						"location": "Bader Theatre",
+						"name": "Dean's Welcome",
+						"description": "Meet your Registrar's Office and develop an understanding for making the most out \nof your university experience. These friendly faces will be there for you every \nstep of your university journey; you just have to take the first step!\n"
+					}
+				],
+				"12.5": [
+					{
+						"color": "gold",
+						"end": 13.5,
+						"location": "NF003",
+						"name": "Sciences Guest Lecture",
+						"description": "Mock lectures are given by two professors in the sciences! Whether you are in \nhumanities or sciences, come and get a preview of what’s to come at U of T.\n"
+					}
+				],
+				"13.5": [
+					{
+						"color": "red",
+						"end": 15,
+						"location": "Old Vic",
+						"name": "Sciences Guest Reception",
+						"description": "Interested in taking a couple of science courses? Plan on enrolling\nin a science-related program of study? Then come on by and mingle with \nyour future professors during this informal meet and greet! \n"
+					}
+				],
+				"16.5": [
+					{
+						"color": "green",
+						"end": 17.5,
+						"location": "Bader Theatre",
+						"name": "Frosh Plays",
+						"description": "Do you like comedy? Do you like drama? Do you like songs about the various\ntrials and tribulations of life here at U of T? Then come out and watch our\nhilarious (and sometimes touching) skits and scenes all written and performed \nby your fellow Victorians!\n"
+					}
+				],
+				"17.5": [
+					{
+						"color": "rorange",
+						"end": 18.5,
+						"location": "Goldring Student Centre",
+						"name": "Doors Open GSC",
+						"description": "Goldring Student Centre - Get a tour of Vic’s very own student centre as well\nparticipate in workshop activities with VOCA, VCAA, the Arts & Crafts Club, \nthe Fencing Club, and many more. Get a taste of what some of our clubs have to offer!\n"
+					}
+				]
+			},
+			"Wednesday": {
+				"10": [
+					{
+						"color": "red",
+						"end": 12,
+						"location": "Hart House Circle",
+						"name": "UTSU Clubs Fair",
+						"description": "See the myriad of clubs (over 200!) U of T has to offer and get involved outside \nof class-before classes!\n"
+					},
+					{
+						"color": "green",
+						"end": 12,
+						"name": "Campus Tours",
+						"location": "Quad",
+						"description": "I can show you the world (shining shimmering splendid). Join us for campus tours\non Wednesday! Whether you want to know where to find your classes or map out the \nbest nap locations, the Hitchhiker's Guide to UofT is the event for you!\n"
+					}
+				],
+				"12": [
+					{
+						"color": "blue",
+						"end": 14,
+						"location": "Goldring Student Centre",
+						"name": "Wellness Wednesdays",
+						"description": "This event is a great way to start off the year by learning about the resources, \nstrategies and services available to assist in maintaining emotional, mental and \nphysical wellness during a possibly stressful school year. Come hang out with some \nadorable therapy dogs (Woof!) and join us for Zumba in the quad.\n"
+					}
+				],
+				"15": [
+					{
+						"color": "red",
+						"end": 19,
+						"location": "Meet in Quad",
+						"name": "Traditionals",
+						"description": "Take part in one of the many traditions at Victoria College, and gain knowledge of \nthe history of Victoria College students, while cementing bonds of friendship and \ncommunity. New to this year: there will be one combined ceremony for all students \nstarting in the Victoria College Quad and continuing in Convocation Hall.\n"
+					}
+				],
+				"19": [
+					{
+						"color": "blue",
+						"end": 20.5,
+						"location": "Meet in Quad",
+						"name": "Dinner With the Dean",
+						"description": "Come by for a free dinner with the Dean of Students before heading over to the \nScarlet & Gold Party!\n"
+					}
+				],
+				"22": [
+					{
+						"color": "red",
+						"end": 24,
+						"location": "Buses from Charles St",
+						"name": "Scarlet & Gold Party",
+						"description": "Meet outside the Goldring Student Centre - the Scarlet and Gold SemiFormal Party\nis held at a ‘secret’ location - one of Toronto’s hottest venues! So throw on your \nbest threads and meet us by the buses - let’s party!\n"
+					},
+					{
+						"color": "gold",
+						"end": 24,
+						"location": "Cat's Eye",
+						"name": "Movie Night",
+						"description": "Don’t feel like busting some moves? Come on out and settle into some comfy \nleather sofas and enjoy an easy-going movie night!\n"
+					}
+				]
+			},
+			"Thursday": {
+				"10": [
+					{
+						"color": "red",
+						"end": 11,
+						"location": "Northrop Frye Hall",
+						"name": "SECsy Time",
+						"description": "Join us for an informative, nonjudgmental and shamefree presentation on \nconsent, boundaries, healthy relationships and sex! \n"
+					},
+					{
+						"color": "gold",
+						"end": 11,
+						"location": "Alumni Hall",
+						"name": "International Students' Reception",
+						"description": "Are you from outside of Canada or new to Toronto? This awesome and informal\nevent is just what you need! Listen to our amazing speakers, chat and munch\non breakfast goodies with upper year international students who are excited\nto share their experiences, and make new friends. \n"
+					}
+				],
+				"15": [
+					{
+						"color": "rorange",
+						"end": 16.5,
+						"location": "Old Vic",
+						"name": "Transitional Seminars II",
+						"description": "Get advice and tips on starting off your university experience as a successful and \ninvolved student at Vic! Sessions run back-to-back for 45 mins each (pick two!): \nBeing Career Minded, Going Abroad, Writing at University, Mental Health and \nAccessibility, and CCR and Student Life.\n"
+					}
+				],
+				"19": [
+					{
+						"color": "gold",
+						"end": 22,
+						"location": "Cat's Eye",
+						"name": "Jam Session",
+						"description": "All wackied and/or tackied out? Come join the Jam session in the Cat's Eye\nfor some relaxed music playing and mingling. People of all skill levels are\nwelcome!\n"
+					},
+					{
+						"color": "red",
+						"end": 22,
+						"location": "Quad",
+						"name": "Wacky Tacky Boat Cruise",
+						"description": "After strutting your stuff on the catwalk, take the party to the Harbourfront. \nWhether you’re on the Northern Spirit or the Kajama, get ready to dance your \nheart out while decked out in your tackiest attire. Bags and water bottles \nare NOT permitted, but bring your ticket, frosh ID, and TTC tokens (which \nyou can buy during the fashion show)!\n"
+					}
+				],
+				"22": [
+					{
+						"color": "rorange",
+						"end": 24,
+						"location": "Goldring Student Centre",
+						"name": "Vic By Night",
+						"description": "Go on a ghost tour to learn which spooky spirits haunt our campus, play \nWerewolf in the Cat's Eye, or chill with leaders in the quad -- take your pick!\n"
+					}
+				],
+				"11.5": [
+					{
+						"color": "green",
+						"end": 12.5,
+						"location": "Quad",
+						"name": "Brunch With Innis",
+						"description": "Join us in the Quad as we honor the longstanding relationship between \nVictoria and Innis with some good old-fashioned (free) brunch! Break bread,\nor pizza in this case, with Vic and Innis peers alike, and showcase your\nVic pride with a cheer + frosh dance-off against Innis. Vic <3’s Innis!\n"
+					}
+				],
+				"12.5": [
+					{
+						"color": "gold",
+						"end": 13.5,
+						"location": "NF003",
+						"name": "Humanities Guest Lecture",
+						"description": "Come hear mock lectures given by two professors in the humanities! This is a \ngreat opportunity to get a glimpse of what’s to come on your academic journey.\n"
+					}
+				],
+				"13.5": [
+					{
+						"color": "red",
+						"end": 15,
+						"location": "Old Vic",
+						"name": "Humanities Guest Reception",
+						"description": "Come mix and mingle with humanities and social science professors from across \nUofT! You'll have the opportunity to ask many first year professors from a variety\nof departments about the courses they teach and the subject posts they recommend, \nas well as valuable tips and tricks to doing well in first year and beyond. \nRefreshments will be provided.  \n"
+					}
+				],
+				"16.5": [
+					{
+						"color": "blue",
+						"end": 17.5,
+						"location": "Cat's Eye",
+						"name": "Rainbow Sprinkles",
+						"description": "Calling all LBGTQ2S identified-people and allies alike! This is your chance to \nacquaint yourself with the LBGTQ2S specific resources, communities and groups \nthat are available at Vic, U of T, and beyond. Join us in a low-key, positive \nspace and bring your sweet tooth to enjoy some ice cream!\n"
+					}
+				],
+				"17.5": [
+					{
+						"color": "green",
+						"end": 18.5,
+						"location": "Quad",
+						"name": "Wacky Tacky Fashion Show",
+						"description": "Prep yourself for the Wacky Tacky Boat Cruise with a huge selection of the \nwackiest and tackiest clothing, then strutt your stuff down our runway to the \nphoto booth. Tokens for purchase will also be available at this time for the \nBoat Cruise at the Harbourfront.\n"
+					}
+				]
+			},
+			"Friday": {
+				"10": [
+					{
+						"color": "rorange",
+						"end": 12,
+						"location": "Quad",
+						"name": "Carnival & BBQ",
+						"description": "The carnival is coming to town! Whether you enjoy eating, playing tug-of-war, \nor launching giant inflatable wrecking balls at your fellow frosh, the \nCarnival has it all!\n"
+					},
+					{
+						"color": "gold",
+						"end": 12,
+						"location": "Old Vic",
+						"name": "Vic Clubs Fair",
+						"description": "While you munch on burgers and hot dogs, come and learn about the awesome \nnumber of clubs, levies, and groups that Vic has to offer! Discover different \nactivities, fi nd ways to get involved, and develop new passions!\n"
+					}
+				],
+				"12": [
+					{
+						"color": "green",
+						"end": 16,
+						"location": "Meet in Quad",
+						"name": "UTSU Parade",
+						"description": "One of the most famous Orientation events, the parade marches 5000 students \nfrom all three U of T campuses through downtown Toronto, walking through the city’s\nbiggest streets and cheering as loud as possible. And it all starts with a \ncheer-off between colleges at Varsity Stadium. Be sure to wear your Vic t-shirt\nand bring your cheering voices!\n"
+					}
+				],
+				"16": [
+					{
+						"color": "gold",
+						"end": 19,
+						"location": "Front Campus",
+						"name": "UTSU Carnival",
+						"description": "As the parade comes to an end join in on the carnival hosted by UTSU for some \nafter-parade fun and mingling! There will be food vendors, giveaways, raffles, \ngames, carnival rides, and much more. \n"
+					}
+				],
+				"19.5": [
+					{
+						"color": "red",
+						"end": 20.5,
+						"location": "Quad",
+						"name": "Closing Ceremonies",
+						"description": "Celebrate the end of Orientation Week 2016 with closing remarks and one final \nfrosh dance, before beginning your journey as an undergraduate student here \nat Victoria College.\n"
+					}
+				],
+				"20.5": [
+					{
+						"color": "blue",
+						"end": 23.5,
+						"location": "Old Vic",
+						"name": "Open Mic Night",
+						"description": "End off the week in good vibes (and snacks) at Open Mic Night - a chance \nto sing your heart out, unveil your poetic skill, or show off your other \ncool and quirky talents. Or just come along to sit back and enjoy the show,\nchill, and reflect on the week!\n"
+					}
+				],
+				"23.5": [
+					{
+						"color": "green",
+						"end": 24,
+						"location": "TBD",
+						"name": "UTSU Afterparty & Alternative",
+						"description": "One of the biggest Orientation afterparties in Canada, there’s a free \nbussing service leaving from Hart House Circle all night! It’s free if\nyou have a T-Card!\n"
+					}
+				]
+			}
+		}
+	};
+
+/***/ },
+/* 170 */
 /*!*************************!*\
   !*** ./src/app/Row.jsx ***!
   \*************************/
@@ -21010,7 +21447,7 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 38);
 	
-	var _config = __webpack_require__(/*! json!yaml!../config.yml */ 439);
+	var _config = __webpack_require__(/*! json!yaml!../config.yml */ 169);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
@@ -21103,7 +21540,6 @@
 	exports.default = Row;
 
 /***/ },
-/* 170 */,
 /* 171 */
 /*!***************************!*\
   !*** ./src/app/Event.jsx ***!
@@ -21179,7 +21615,7 @@
 	
 	var _Day2 = _interopRequireDefault(_Day);
 	
-	var _config = __webpack_require__(/*! json!yaml!../config.yml */ 439);
+	var _config = __webpack_require__(/*! json!yaml!../config.yml */ 169);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
@@ -21224,11 +21660,15 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 38);
 	
-	var _config = __webpack_require__(/*! json!yaml!../config.yml */ 439);
+	var _config = __webpack_require__(/*! json!yaml!../config.yml */ 169);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 174);
+	
+	var _Image = __webpack_require__(/*! ./Image.jsx */ 439);
+	
+	var _Image2 = _interopRequireDefault(_Image);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -21294,7 +21734,20 @@
 	              eventKey: event.tag,
 	              ref: event.tag
 	            },
-	            event.description
+	            event.description,
+	            _react2.default.createElement(_Image2.default, { filename: event.tag }),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement(
+	              'span',
+	              { style: { float: 'down' } },
+	              'Location: ',
+	              _react2.default.createElement(
+	                'b',
+	                null,
+	                event.location
+	              )
+	            )
 	          );
 	        });
 	      })
@@ -41341,406 +41794,37 @@
 
 /***/ },
 /* 439 */
-/*!********************************************************!*\
-  !*** ./~/json-loader!./~/yaml-loader!./src/config.yml ***!
-  \********************************************************/
-/***/ function(module, exports) {
+/*!***************************!*\
+  !*** ./src/app/Image.jsx ***!
+  \***************************/
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = {
-		"colors": {
-			"blue": "#3F51B5",
-			"red": "#DB2727",
-			"orange": "#EF6C00",
-			"green": "#4CAF50",
-			"gold": "#DCA828",
-			"purple": "#9C27B0",
-			"teal": "#009688",
-			"lblue": "#2196F3",
-			"rorange": "#F44336",
-			"pinky": "#E91E63",
-			"bgreen": "#024640",
-			"ggold": "#827717",
-			"bpurple": "#32004B",
-			"cgrey": "#607D8B",
-			"dgreen": "#024640"
-		},
-		"schedule": {
-			"logo": "assets/title.png",
-			"start": 9,
-			"end": 24
-		},
-		"events": {
-			"Sunday": {
-				"10": [
-					{
-						"color": "blue",
-						"end": 16,
-						"name": "Residence Move-In",
-						"description": "So you’ve made it to Victoria College – now what?\nCheck in and get your frosh ID, Vic swag, and keys before moving into your residence building!\nGet to know your residence mates and find out more about what your year on campus is going to be like!\n"
-					}
-				],
-				"16": [
-					{
-						"color": "green",
-						"end": 20,
-						"name": "Residence Orientation",
-						"description": "Kelly Castle was fired from trin"
-					}
-				]
-			},
-			"Monday": {
-				"9": [
-					{
-						"color": "blue",
-						"end": 10.5,
-						"name": "Commuter Registration",
-						"location": "VC",
-						"description": "Only at Vic are the admin literally against student life"
-					}
-				],
-				"12": [
-					{
-						"color": "green",
-						"end": 13,
-						"name": "Grand Meet & Greet",
-						"description": "The vic admin are among the highest-paid admin at UofT"
-					}
-				],
-				"13": [
-					{
-						"color": "blue",
-						"end": 14,
-						"name": "Pizza with VUSAC",
-						"location": "Quad",
-						"description": "vic is a colourblind community"
-					}
-				],
-				"14": [
-					{
-						"color": "red",
-						"end": 15,
-						"name": "Opening Ceremonies",
-						"location": "Quad",
-						"description": "TRIN is somehow less racist than vic now"
-					}
-				],
-				"15": [
-					{
-						"color": "green",
-						"end": 16,
-						"name": "Frosh dance",
-						"location": "Quad",
-						"description": "at vic, equity language is appropriated to blame and shame anyone who disagrees with the dean's office"
-					}
-				],
-				"16": [
-					{
-						"color": "gold",
-						"end": 19,
-						"name": "Scavenger Hunt",
-						"location": "Quad"
-					}
-				],
-				"19": [
-					{
-						"color": "purple",
-						"end": 20.5,
-						"name": "Dissolve",
-						"location": "BT"
-					}
-				],
-				"21": [
-					{
-						"color": "red",
-						"end": 24,
-						"name": "Vic Lights",
-						"location": "Alumni Hall"
-					},
-					{
-						"color": "gold",
-						"end": 24,
-						"name": "Victory Night",
-						"location": "Cats Eye"
-					}
-				],
-				"10.5": [
-					{
-						"color": "orange",
-						"end": 12,
-						"name": "Meet Your Dons",
-						"description": "Vic one is overrated and over funded"
-					}
-				]
-			},
-			"Tuesday": {
-				"15": [
-					{
-						"color": "blue",
-						"end": 16.5,
-						"location": "Old Vic",
-						"name": "Transitional Seminars"
-					}
-				],
-				"20": [
-					{
-						"color": "red",
-						"end": 24,
-						"location": "Old Vic",
-						"name": "Casino Royale"
-					},
-					{
-						"color": "gold",
-						"end": 24,
-						"location": "Cat's Eye",
-						"name": "Karaoke"
-					}
-				],
-				"9.5": [
-					{
-						"color": "rorange",
-						"end": 11,
-						"location": "Burwash Dining Hall",
-						"name": "Breakfast With Your Presidents"
-					}
-				],
-				"11.5": [
-					{
-						"color": "blue",
-						"end": 12.5,
-						"location": "Bader Theatre",
-						"name": "Dean's Welcome"
-					}
-				],
-				"12.5": [
-					{
-						"color": "gold",
-						"end": 13.5,
-						"location": "NF003",
-						"name": "Sciences Guest Lecture"
-					}
-				],
-				"13.5": [
-					{
-						"color": "red",
-						"end": 15,
-						"location": "Old Vic",
-						"name": "Sciences Guest Reception"
-					}
-				],
-				"17.5": [
-					{
-						"color": "rorange",
-						"end": 18.5,
-						"location": "Goldring Student Centre",
-						"name": "Doors Open GSC"
-					}
-				],
-				"16.5": [
-					{
-						"color": "green",
-						"end": 17.5,
-						"location": "Bader Theatre",
-						"name": "Frosh Plays"
-					}
-				]
-			},
-			"Wednesday": {
-				"10": [
-					{
-						"color": "red",
-						"end": 12,
-						"location": "Hart House Circle",
-						"name": "UTSU Clubs Fair"
-					},
-					{
-						"color": "green",
-						"end": 12,
-						"location": "Campus Tours",
-						"name": "Quad"
-					}
-				],
-				"12": [
-					{
-						"color": "blue",
-						"end": 14,
-						"location": "Goldring Student Centre",
-						"name": "Wellness Wednesday"
-					}
-				],
-				"15": [
-					{
-						"color": "red",
-						"end": 19,
-						"location": "Meet in Quad",
-						"name": "Traditionals"
-					}
-				],
-				"19": [
-					{
-						"color": "blue",
-						"end": 20.5,
-						"location": "Meet in Quad",
-						"name": "Dinner With the Dean"
-					}
-				],
-				"22": [
-					{
-						"color": "red",
-						"end": 24,
-						"location": "Buses from Charles St",
-						"name": "Scarlet & Gold Party"
-					},
-					{
-						"color": "gold",
-						"end": 24,
-						"location": "Cat's Eye",
-						"name": "Movie Night"
-					}
-				]
-			},
-			"Thursday": {
-				"10": [
-					{
-						"color": "red",
-						"end": 11,
-						"location": "Northrop Frye Hall",
-						"name": "SECsy Time"
-					},
-					{
-						"color": "gold",
-						"end": 11,
-						"location": "Alumni Hall",
-						"name": "International Students' Reception"
-					}
-				],
-				"15": [
-					{
-						"color": "rorange",
-						"end": 16.5,
-						"location": "Old Vic",
-						"name": "Transitional Seminars"
-					}
-				],
-				"19": [
-					{
-						"color": "red",
-						"end": 22,
-						"name": "Wacky Tacky Boat Cruise"
-					},
-					{
-						"color": "gold",
-						"end": 22,
-						"location": "Cat's Eye",
-						"name": "Jam Session"
-					}
-				],
-				"22": [
-					{
-						"color": "rorange",
-						"end": 24,
-						"location": "Goldring Student Centre",
-						"name": "Vic By Night"
-					}
-				],
-				"11.5": [
-					{
-						"color": "green",
-						"end": 12.5,
-						"location": "Quad",
-						"name": "Brunch With Innis"
-					}
-				],
-				"12.5": [
-					{
-						"color": "gold",
-						"end": 13.5,
-						"location": "NF003",
-						"name": "Humanities Guest Lecture"
-					}
-				],
-				"13.5": [
-					{
-						"color": "red",
-						"end": 15,
-						"location": "Old Vic",
-						"name": "Humanities Guest Reception"
-					}
-				],
-				"16.5": [
-					{
-						"color": "blue",
-						"end": 17.5,
-						"location": "Cat's Eye",
-						"name": "Rainbow Sprinkles"
-					}
-				],
-				"17.5": [
-					{
-						"color": "green",
-						"end": 18.5,
-						"location": "Quad",
-						"name": "Wacky Tacky Fashion Show"
-					}
-				]
-			},
-			"Friday": {
-				"10": [
-					{
-						"color": "rorange",
-						"end": 12,
-						"location": "Quad",
-						"name": "Carnival & BBQ"
-					},
-					{
-						"color": "gold",
-						"end": 12,
-						"location": "Old Vic",
-						"name": "Vic Clubs Fair"
-					}
-				],
-				"12": [
-					{
-						"color": "green",
-						"end": 16,
-						"location": "Meet in Quad",
-						"name": "UTSU Parade"
-					}
-				],
-				"16": [
-					{
-						"color": "gold",
-						"end": 19,
-						"location": "Front Campus",
-						"name": "UTSU Carnival"
-					}
-				],
-				"19.5": [
-					{
-						"color": "red",
-						"end": 20.5,
-						"location": "Quad",
-						"name": "Closing Ceremonies"
-					}
-				],
-				"20.5": [
-					{
-						"color": "blue",
-						"end": 23.5,
-						"location": "Old Vic",
-						"name": "Open Mic Night"
-					}
-				],
-				"23.5": [
-					{
-						"color": "green",
-						"end": 24,
-						"location": "TBD",
-						"name": "UTSU Afterparty & Alternative"
-					}
-				]
-			}
-		}
-	};
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(/*! react-dom */ 38);
+	
+	var _config = __webpack_require__(/*! json!yaml!../config.yml */ 169);
+	
+	var _config2 = _interopRequireDefault(_config);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function Image(_ref) {
+	  var filename = _ref.filename;
+	
+	  var path = 'src/res/' + filename + '.jpg';
+	  return _react2.default.createElement('object', { className: 'pic', data: path, type: 'image/png' });
+	}
+	
+	exports.default = Image;
 
 /***/ }
 /******/ ]);
