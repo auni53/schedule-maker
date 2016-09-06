@@ -4,7 +4,6 @@ import config from 'json!yaml!../config.yml';
 import Event from './Event.jsx';
 
 export default class Row extends React.Component {
-
   eventsAtTime(day, time) {
     return Object.keys(config.events[day]).filter( t => 
       (t <= time && time < config.events[day][t][0].end)
@@ -12,7 +11,7 @@ export default class Row extends React.Component {
   }
 
   render() {
-    const { time, active } = this.props;
+    const { activate, time } = this.props;
 
     const eventInfo = config.events;
     const colorInfo = config.colors;    
@@ -33,7 +32,16 @@ export default class Row extends React.Component {
         const end = eventsAtTime[0].end;
         return (
           <td key={key} rowSpan={(end - time) * 2} >
-            {eventsAtTime.map(e => <Event key={e.name} n={eventsAtTime.length} event={e} color={colorInfo[e.color] || e.color} />)}
+            {eventsAtTime
+              .map(e => 
+                <Event
+                  key={e.name}
+                  n={eventsAtTime.length}
+                  event={e}
+                  color={colorInfo[e.color] || e.color}
+                  activate={activate}
+                />
+              )}
           </td>
         );
       } else {

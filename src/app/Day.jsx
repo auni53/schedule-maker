@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import config from 'json!yaml!../config.yml';
 import { Accordion, Panel } from 'react-bootstrap';
 import Image from './Image.jsx';
+import { getTag } from './lib.js';
 
 function formatTime(number) {
   let midiStatus = number < 12 ? ' am' : ' pm';
@@ -15,8 +16,7 @@ function formatTime(number) {
   }
 }
 
-function Day({ day }) {
-
+function Day({ active, day }) {
   const eventInfo = config.events;
   const colorInfo = config.colors;    
 
@@ -25,16 +25,16 @@ function Day({ day }) {
   return (
     <span id='panel'>
       <h3 id="SUN">{day}</h3>
-      <Accordion>
+      <Accordion activeKey={active} >
         { times.map(eventTime => {
             const eventsAtTime = eventInfo[day][eventTime];
             if (!eventsAtTime) return;
 
             return eventsAtTime.map(event => {
               if (!event) return;
-              event.tag = event.name.split(' ').join('').toLowerCase();
+              event.tag = getTag(event.name);
 
-              const spanStyle = { float: 'right', };
+              const spanStyle = { float: 'right' };
               const anchor = (
                 <a className='header' id={event.tag}>
                   <h4>

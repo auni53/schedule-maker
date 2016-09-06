@@ -1,8 +1,10 @@
 import React from 'react';
 import { findDOMNode, render } from 'react-dom';
+import { getTag } from './lib.js';
+import 'smoothscroll';
 
 function Event(props) {
-  const { event, n, color, active } = props;
+  const { activate, color, event, n } = props;
 
   let style = {
     color: 'white',
@@ -18,15 +20,27 @@ function Event(props) {
     textAlign: 'center',
   };
 
-  event.tag = event.name.split(' ').join('').toLowerCase();
+  const tag = getTag(event.name);
 
-  if (event.tag === 'karaoke') {
+  if (tag === 'karaoke') {
     style.height = 'calc(100% + 15px)';
     style.marginTop = '-15px';
   }
 
+  const handleClick = () => {
+    activate(null);
+
+    const anchor = document.querySelector(`#${tag}`);
+    // smoothScroll(anchor);
+
+    activate(tag);
+
+    // setTimeout(() => {
+    // }, 100);
+  }
+
   return (
-    <a className='event' style={style} href={`#${event.tag}`} >
+    <a className='event' style={style} href={`#${tag}`} onClick={handleClick} >
       {event.name}
     </a>
   );
