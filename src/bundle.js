@@ -21583,6 +21583,11 @@
 	
 	  event.tag = event.name.split(' ').join('').toLowerCase();
 	
+	  if (event.tag === 'karaoke') {
+	    style.height = 'calc(100% + 15px)';
+	    style.marginTop = '-15px';
+	  }
+	
 	  return _react2.default.createElement(
 	    'a',
 	    { className: 'event', style: style, href: '#' + event.tag },

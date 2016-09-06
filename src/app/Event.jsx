@@ -4,7 +4,7 @@ import { findDOMNode, render } from 'react-dom';
 function Event(props) {
   const { event, n, color, active } = props;
 
-  const style = {
+  let style = {
     color: 'white',
     fontWeight: 500,
 
@@ -19,6 +19,11 @@ function Event(props) {
   };
 
   event.tag = event.name.split(' ').join('').toLowerCase();
+
+  if (event.tag === 'karaoke') {
+    style.height = 'calc(100% + 15px)';
+    style.marginTop = '-15px';
+  }
 
   return (
     <a className='event' style={style} href={`#${event.tag}`} >
