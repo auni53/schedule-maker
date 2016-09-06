@@ -14,6 +14,14 @@
 
 }
 
+#header {
+  margin-bottom: 20px;
+ }
+
+#header img {
+  height: 120px;
+}
+
 #app {
   float: middle;
   margin-left: auto;

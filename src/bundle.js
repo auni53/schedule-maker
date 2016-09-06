@@ -57,6 +57,10 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 38);
 	
+	var _Header = __webpack_require__(/*! ./Header.jsx */ 444);
+	
+	var _Header2 = _interopRequireDefault(_Header);
+	
 	var _Table = __webpack_require__(/*! ./Table.jsx */ 168);
 	
 	var _Table2 = _interopRequireDefault(_Table);
@@ -100,6 +104,7 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
+	        _react2.default.createElement(_Header2.default, null),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'table-container', align: 'middle' },
@@ -42013,6 +42018,53 @@
 	
 	});
 
+
+/***/ },
+/* 444 */
+/*!****************************!*\
+  !*** ./src/app/Header.jsx ***!
+  \****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(/*! react-dom */ 38);
+	
+	var _config = __webpack_require__(/*! json!yaml!../config.yml */ 169);
+	
+	var _config2 = _interopRequireDefault(_config);
+	
+	var _Row = __webpack_require__(/*! ./Row.jsx */ 170);
+	
+	var _Row2 = _interopRequireDefault(_Row);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function Header(_ref) {
+	  var activate = _ref.activate;
+	
+	
+	  var logoStyle = {};
+	
+	  var titleStyle = {};
+	
+	  return _react2.default.createElement(
+	    'div',
+	    { id: 'header' },
+	    _react2.default.createElement('img', { style: logoStyle, src: 'src/res/logo.png' }),
+	    _react2.default.createElement('img', { style: titleStyle, src: 'src/res/title.png' })
+	  );
+	}
+	
+	exports.default = Header;
 
 /***/ }
 /******/ ]);

@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
+import Header from './Header.jsx';
 import Table from './Table.jsx';
 import Descriptions from './Descriptions.jsx';
 
@@ -22,6 +23,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <Header />
         <div className="table-container" align="middle">
           <Table activate={this.activate} />
         </div>
