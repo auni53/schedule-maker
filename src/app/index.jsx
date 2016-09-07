@@ -16,18 +16,18 @@ class App extends React.Component {
   }
 
   activate(tag) {
-    console.log("ACTIVATING " + tag);
     this.setState({ active : tag });
   }
 
   render() {
+    console.log("ACTIVE: " + this.state.active);
     return (
       <div>
         <Header />
         <div className="table-container" align="middle">
           <Table activate={this.activate} />
         </div>
-        <Descriptions active={this.state.active} />
+        <Descriptions activate={this.activate} active={this.state.active} />
       </div>
     );
   }

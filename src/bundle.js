@@ -95,12 +95,12 @@
 	  _createClass(App, [{
 	    key: 'activate',
 	    value: function activate(tag) {
-	      console.log("ACTIVATING " + tag);
 	      this.setState({ active: tag });
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      console.log("ACTIVE: " + this.state.active);
 	      return _react2.default.createElement(
 	        'div',
 	        null,
@@ -110,7 +110,7 @@
 	          { className: 'table-container', align: 'middle' },
 	          _react2.default.createElement(_Table2.default, { activate: this.activate })
 	        ),
-	        _react2.default.createElement(_Descriptions2.default, { active: this.state.active })
+	        _react2.default.createElement(_Descriptions2.default, { activate: this.activate, active: this.state.active })
 	      );
 	    }
 	  }]);
@@ -21658,6 +21658,8 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 38);
 	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 175);
+	
 	var _Day = __webpack_require__(/*! ./Day.jsx */ 174);
 	
 	var _Day2 = _interopRequireDefault(_Day);
@@ -21669,6 +21671,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function Descriptions(_ref) {
+	  var activate = _ref.activate;
 	  var active = _ref.active;
 	
 	  var colorInfo = _config2.default.colors;
@@ -21683,7 +21686,7 @@
 	      'Events'
 	    ),
 	    days.map(function (day) {
-	      return _react2.default.createElement(_Day2.default, { key: day, day: day, active: active });
+	      return _react2.default.createElement(_Day2.default, { key: day, day: day, activate: activate, active: active });
 	    })
 	  );
 	}
@@ -21735,6 +21738,7 @@
 	}
 	
 	function Day(_ref) {
+	  var activate = _ref.activate;
 	  var active = _ref.active;
 	  var day = _ref.day;
 	
@@ -21751,58 +21755,63 @@
 	      { id: 'SUN' },
 	      day
 	    ),
-	    _react2.default.createElement(
-	      _reactBootstrap.Accordion,
-	      { defaultActiveKey: active },
-	      times.map(function (eventTime) {
-	        var eventsAtTime = eventInfo[day][eventTime];
-	        if (!eventsAtTime) return;
+	    times.map(function (eventTime) {
+	      var eventsAtTime = eventInfo[day][eventTime];
+	      if (!eventsAtTime) return;
 	
-	        return eventsAtTime.map(function (event) {
-	          if (!event) return;
-	          event.tag = (0, _lib.getTag)(event.name);
+	      return eventsAtTime.map(function (event) {
+	        if (!event) return;
+	        event.tag = (0, _lib.getTag)(event.name);
 	
-	          var spanStyle = { float: 'right' };
-	          var anchor = _react2.default.createElement(
-	            'a',
-	            { className: 'header', id: event.tag },
-	            _react2.default.createElement(
-	              'h4',
-	              null,
-	              event.name,
-	              _react2.default.createElement(
-	                'span',
-	                { style: spanStyle },
-	                formatTime(eventTime)
-	              )
-	            )
-	          );
+	        function handleClick() {
+	          if (event.tag === active) {
+	            activate(null);
+	          } else {
+	            activate(event.tag);
+	          }
+	        }
 	
-	          return _react2.default.createElement(
-	            _reactBootstrap.Panel,
-	            { key: event.tag,
-	              header: anchor,
-	              eventKey: event.tag,
-	              ref: event.tag
-	            },
-	            event.description,
-	            _react2.default.createElement(_Image2.default, { filename: event.tag }),
-	            _react2.default.createElement('br', null),
-	            _react2.default.createElement('br', null),
+	        var spanStyle = { float: 'right' };
+	        var anchor = _react2.default.createElement(
+	          'a',
+	          { className: 'header', id: event.tag, onClick: handleClick },
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            event.name,
 	            _react2.default.createElement(
 	              'span',
-	              { style: { float: 'down' } },
-	              'Location: ',
-	              _react2.default.createElement(
-	                'b',
-	                null,
-	                event.location
-	              )
+	              { style: spanStyle },
+	              formatTime(eventTime)
 	            )
-	          );
-	        });
-	      })
-	    )
+	          )
+	        );
+	
+	        return _react2.default.createElement(
+	          _reactBootstrap.Panel,
+	          { key: event.tag,
+	            header: anchor,
+	            eventKey: event.tag,
+	            collapsible: true,
+	            expanded: event.tag === active
+	          },
+	          event.description,
+	          _react2.default.createElement(_Image2.default, { filename: event.tag }),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement(
+	            'span',
+	            { style: { float: 'down' } },
+	            'Location: ',
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              event.location
+	            )
+	          )
+	        );
+	      });
+	    })
 	  );
 	}
 	

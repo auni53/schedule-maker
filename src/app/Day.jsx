@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import config from 'json!yaml!../config.yml';
-import { Accordion, Panel } from 'react-bootstrap';
+import { Panel } from 'react-bootstrap';
 import Image from './Image.jsx';
 import { getTag } from './lib.js';
 
@@ -16,7 +16,7 @@ function formatTime(number) {
   }
 }
 
-function Day({ active, day }) {
+function Day({ activate, active, day }) {
   const eventInfo = config.events;
   const colorInfo = config.colors;    
 
@@ -25,8 +25,8 @@ function Day({ active, day }) {
   return (
     <span id='panel'>
       <h3 id="SUN">{day}</h3>
-      <Accordion defaultActiveKey={active} >
-        { times.map(eventTime => {
+        {
+          times.map(eventTime => {
             const eventsAtTime = eventInfo[day][eventTime];
             if (!eventsAtTime) return;
 
@@ -34,9 +34,17 @@ function Day({ active, day }) {
               if (!event) return;
               event.tag = getTag(event.name);
 
+              function handleClick() {
+                if (event.tag === active) {
+                  activate(null);
+                } else {
+                  activate(event.tag);
+                }
+              }
+
               const spanStyle = { float: 'right' };
               const anchor = (
-                <a className='header' id={event.tag}>
+                <a className='header' id={event.tag} onClick={handleClick} >
                   <h4>
                     {event.name}
                     <span style={spanStyle}>{formatTime(eventTime)}</span>
@@ -48,8 +56,9 @@ function Day({ active, day }) {
                   <Panel key={event.tag}
                          header={anchor}
                          eventKey={event.tag}
-                         ref={event.tag}
-                         >
+                         collapsible={true}
+                         expanded={event.tag === active}
+                    >
 
                     {event.description}
                     <Image filename={event.tag} />
@@ -61,7 +70,6 @@ function Day({ active, day }) {
             }
           )})
         }
-      </Accordion>
     </span>
   );
 
