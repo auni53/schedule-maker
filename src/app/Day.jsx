@@ -25,7 +25,7 @@ function Day({ active, day }) {
   return (
     <span id='panel'>
       <h3 id="SUN">{day}</h3>
-      <Accordion activeKey={active} >
+      <Accordion defaultActiveKey={active} >
         { times.map(eventTime => {
             const eventsAtTime = eventInfo[day][eventTime];
             if (!eventsAtTime) return;

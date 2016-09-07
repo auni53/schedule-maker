@@ -21753,7 +21753,7 @@
 	    ),
 	    _react2.default.createElement(
 	      _reactBootstrap.Accordion,
-	      { activeKey: active },
+	      { defaultActiveKey: active },
 	      times.map(function (eventTime) {
 	        var eventsAtTime = eventInfo[day][eventTime];
 	        if (!eventsAtTime) return;
