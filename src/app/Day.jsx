@@ -60,8 +60,8 @@ function Day({ activate, active, day }) {
                          expanded={event.tag === active}
                     >
 
-                    {event.description}
                     <Image filename={event.tag} />
+                    {event.description}
 
                     <br/><br/>
                     <span style={{float: 'down' }}>Location: <b>{event.location}</b></span>

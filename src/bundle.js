@@ -21795,8 +21795,8 @@
 	            collapsible: true,
 	            expanded: event.tag === active
 	          },
-	          event.description,
 	          _react2.default.createElement(_Image2.default, { filename: event.tag }),
+	          event.description,
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
@@ -41880,8 +41880,10 @@
 	function Image(_ref) {
 	  var filename = _ref.filename;
 	
+	  var imgStyle = { padding: '5px' };
+	
 	  var path = 'src/res/' + filename + '.jpg';
-	  return _react2.default.createElement('object', { className: 'pic', data: path, type: 'image/png' });
+	  return _react2.default.createElement('object', { style: imgStyle, className: 'pic', data: path, type: 'image/png' });
 	}
 	
 	exports.default = Image;
