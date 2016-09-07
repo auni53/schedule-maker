@@ -3,15 +3,13 @@ import { render } from 'react-dom';
 import Header from './Header.jsx';
 import Table from './Table.jsx';
 import Descriptions from './Descriptions.jsx';
+import ScrollToTop from 'react-scroll-up';
 
 class App extends React.Component {
-
   constructor() {
     super();
-
     this.state = {};
     this.state.active = null;
-
     this.activate = this.activate.bind(this);
   }
 
@@ -20,7 +18,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log("ACTIVE: " + this.state.active);
     return (
       <div>
         <Header />
@@ -28,6 +25,13 @@ class App extends React.Component {
           <Table activate={this.activate} />
         </div>
         <Descriptions activate={this.activate} active={this.state.active} />
+        <ScrollToTop showUnder={760}>
+          <span>
+            <a id='backtotop'>
+              <img src='src/res/top.png' />
+            </a>
+          </span>
+        </ScrollToTop>
       </div>
     );
   }

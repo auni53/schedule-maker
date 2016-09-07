@@ -14,6 +14,18 @@
 
 }
 
+@media only screen and (max-width: 768px) {
+  #backtotop {
+    right: 5%;
+    bottom: 5%;
+    left: initial;
+  }
+
+  #backtotop img {
+    width: 100px;
+  }
+}
+
 #header {
   margin-bottom: 20px;
  }
