@@ -122,7 +122,7 @@
 	            _react2.default.createElement(
 	              'a',
 	              { id: 'backtotop' },
-	              _react2.default.createElement('img', { src: 'src/res/top.png' })
+	              _react2.default.createElement('img', { alt: 'started from the bottom', src: 'src/res/top.png' })
 	            )
 	          )
 	        )
@@ -20941,16 +20941,11 @@
 	function Header(_ref) {
 	  var activate = _ref.activate;
 	
-	
-	  var logoStyle = {};
-	
-	  var titleStyle = {};
-	
 	  return _react2.default.createElement(
 	    'div',
 	    { id: 'header' },
-	    _react2.default.createElement('img', { style: logoStyle, src: 'src/res/logo.png' }),
-	    _react2.default.createElement('img', { style: titleStyle, src: 'src/res/title.png' })
+	    _react2.default.createElement('img', { src: 'src/res/logo.png' }),
+	    _react2.default.createElement('img', { src: 'src/res/title.png' })
 	  );
 	}
 	
@@ -42010,8 +42005,8 @@
 	
 	        var spanStyle = { float: 'right' };
 	        var anchor = _react2.default.createElement(
-	          'a',
-	          { className: 'header', id: event.tag, onClick: handleClick },
+	          'div',
+	          { id: event.tag, onClick: handleClick },
 	          _react2.default.createElement(
 	            'h4',
 	            null,

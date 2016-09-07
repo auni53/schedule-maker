@@ -4,19 +4,10 @@ import config from 'json!yaml!../config.yml';
 import Row from './Row.jsx';
 
 function Header({ activate }) {
-
-  const logoStyle = {
-
-  };
-
-  const titleStyle = {
-
-  };
-
   return (
     <div id="header">
-      <img style={logoStyle} src='src/res/logo.png' />
-      <img style={titleStyle} src='src/res/title.png' />
+      <img src='src/res/logo.png' />
+      <img src='src/res/title.png' />
     </div>
   );
 }

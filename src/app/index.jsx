@@ -28,7 +28,7 @@ class App extends React.Component {
         <ScrollToTop showUnder={760}>
           <span>
             <a id='backtotop'>
-              <img src='src/res/top.png' />
+              <img alt='started from the bottom' src='src/res/top.png' />
             </a>
           </span>
         </ScrollToTop>

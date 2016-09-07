@@ -44,12 +44,12 @@ function Day({ activate, active, day }) {
 
               const spanStyle = { float: 'right' };
               const anchor = (
-                <a className='header' id={event.tag} onClick={handleClick} >
+                <div id={event.tag} onClick={handleClick} >
                   <h4>
                     {event.name}
                     <span style={spanStyle}>{formatTime(eventTime)}</span>
                   </h4>
-                </a>
+                </div>
               );
 
               return (

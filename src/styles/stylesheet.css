@@ -27,13 +27,21 @@
 }
 
 #header {
+  margin-top: 10px;
   margin-bottom: 20px;
   width: 100%
 }
 
 #header img {
-  max-width: 50%;
   max-height: 120px;
+}
+
+#header img:first-child {
+  max-width: 30%;
+}
+
+#header img:last-child {
+  max-width: 70%;
 }
 
 #app {
